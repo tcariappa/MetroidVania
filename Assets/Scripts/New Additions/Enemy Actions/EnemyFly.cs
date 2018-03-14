@@ -7,7 +7,7 @@ public class EnemyFly : MonoBehaviour {
     public float speed = 5;
     SpriteRenderer sr;
     public Transform[] trgts;
-
+    public Rigidbody2D rb;
     Transform tgt;
     private int currentWpIndex;
 
@@ -19,22 +19,25 @@ public class EnemyFly : MonoBehaviour {
         tgt = trgts[0];
         //tgt = FindObjectOfType<PCController>().transform;
 	}
-	
-	void Update()
+    private void FixedUpdate()
     {
         Vector2 tgtPos = tgt.position;
-        tgtPos.y += 1.0f;
-        Vector2 newPosition = Vector2.MoveTowards(transform.position, tgtPos, speed * Time.deltaTime);
-        transform.position = newPosition;
+        Vector2 rbDiff = tgtPos - rb.position;
+        Vector2 moveDirection = rbDiff.normalized;
 
-        sr.flipX = tgtPos.x < transform.position.x ? true : false;
+        rb.velocity = moveDirection * speed;
+        //rb.velocity = ((Vector2)tgt.position - rb.position).normalized * speed;  ALTERNATIVE METHOD
+    }
+    private void Update()
+    {
 
-        Vector2 diff = tgtPos - newPosition;
-        float dist = diff.magnitude;
+        sr.flipX = tgt.position.x < transform.position.x ? true : false;
+
+        float dist = ((Vector2)tgt.position - rb.position).magnitude;
         if(dist < 0.5f)
         {
             doWhenHitObject();
-        }
+        }   
     }
 
     void doWhenHitObject()
