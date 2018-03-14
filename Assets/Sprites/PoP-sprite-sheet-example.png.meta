@@ -1,0 +1,842 @@
+fileFormatVersion: 2
+guid: bdd27e871b036394caad4d05b66d2d3c
+timeCreated: 1484401115
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PoP-sprite-sheet-example_0
+    21300002: PoP-sprite-sheet-example_1
+    21300004: PoP-sprite-sheet-example_2
+    21300006: PoP-sprite-sheet-example_3
+    21300008: PoP-sprite-sheet-example_4
+    21300010: PoP-sprite-sheet-example_5
+    21300012: PoP-sprite-sheet-example_6
+    21300014: PoP-sprite-sheet-example_7
+    21300016: PoP-sprite-sheet-example_8
+    21300018: PoP-sprite-sheet-example_9
+    21300020: PoP-sprite-sheet-example_10
+    21300022: PoP-sprite-sheet-example_11
+    21300024: PoP-sprite-sheet-example_12
+    21300026: PoP-sprite-sheet-example_13
+    21300028: PoP-sprite-sheet-example_14
+    21300030: PoP-sprite-sheet-example_15
+    21300032: PoP-sprite-sheet-example_16
+    21300034: PoP-sprite-sheet-example_17
+    21300036: PoP-sprite-sheet-example_18
+    21300038: PoP-sprite-sheet-example_19
+    21300040: PoP-sprite-sheet-example_20
+    21300042: PoP-sprite-sheet-example_21
+    21300044: PoP-sprite-sheet-example_22
+    21300046: PoP-sprite-sheet-example_23
+    21300048: PoP-sprite-sheet-example_24
+    21300050: PoP-sprite-sheet-example_25
+    21300052: PoP-sprite-sheet-example_26
+    21300054: PoP-sprite-sheet-example_27
+    21300056: PoP-sprite-sheet-example_28
+    21300058: PoP-sprite-sheet-example_29
+    21300060: PoP-sprite-sheet-example_30
+    21300062: PoP-sprite-sheet-example_31
+    21300064: PoP-sprite-sheet-example_32
+    21300066: PoP-sprite-sheet-example_33
+    21300068: PoP-sprite-sheet-example_34
+    21300070: PoP-sprite-sheet-example_35
+    21300072: PoP-sprite-sheet-example_36
+    21300074: PoP-sprite-sheet-example_37
+    21300076: PoP-sprite-sheet-example_38
+    21300078: PoP-sprite-sheet-example_39
+    21300080: PoP-sprite-sheet-example_40
+    21300082: PoP-sprite-sheet-example_41
+    21300084: PoP-sprite-sheet-example_42
+    21300086: PoP-sprite-sheet-example_43
+    21300088: PoP-sprite-sheet-example_44
+    21300090: PoP-sprite-sheet-example_45
+    21300092: PoP-sprite-sheet-example_46
+    21300094: PoP-sprite-sheet-example_47
+    21300096: PoP-sprite-sheet-example_48
+    21300098: PoP-sprite-sheet-example_49
+    21300100: PoP-sprite-sheet-example_50
+    21300102: PoP-sprite-sheet-example_51
+    21300104: PoP-sprite-sheet-example_52
+    21300106: PoP-sprite-sheet-example_53
+    21300108: PoP-sprite-sheet-example_54
+    21300110: PoP-sprite-sheet-example_55
+    21300112: PoP-sprite-sheet-example_56
+    21300114: PoP-sprite-sheet-example_57
+    21300116: PoP-sprite-sheet-example_58
+    21300118: PoP-sprite-sheet-example_59
+    21300120: PoP-sprite-sheet-example_60
+    21300122: PoP-sprite-sheet-example_61
+    21300124: PoP-sprite-sheet-example_62
+    21300126: PoP-sprite-sheet-example_63
+    21300128: PoP-sprite-sheet-example_64
+    21300130: PoP-sprite-sheet-example_65
+    21300132: PoP-sprite-sheet-example_66
+    21300134: PoP-sprite-sheet-example_67
+    21300136: PoP-sprite-sheet-example_68
+    21300138: PoP-sprite-sheet-example_69
+    21300140: PoP-sprite-sheet-example_70
+    21300142: PoP-sprite-sheet-example_71
+    21300144: PoP-sprite-sheet-example_72
+    21300146: PoP-sprite-sheet-example_73
+    21300148: PoP-sprite-sheet-example_74
+    21300150: PoP-sprite-sheet-example_75
+    21300152: PoP-sprite-sheet-example_76
+    21300154: PoP-sprite-sheet-example_77
+    21300156: PoP-sprite-sheet-example_78
+    21300158: PoP-sprite-sheet-example_79
+    21300160: PoP-sprite-sheet-example_80
+    21300162: PoP-sprite-sheet-example_81
+    21300164: PoP-sprite-sheet-example_82
+    21300166: PoP-sprite-sheet-example_83
+    21300168: PoP-sprite-sheet-example_84
+    21300170: PoP-sprite-sheet-example_85
+    21300172: PoP-sprite-sheet-example_86
+    21300174: PoP-sprite-sheet-example_87
+    21300176: PoP-sprite-sheet-example_88
+    21300178: PoP-sprite-sheet-example_89
+    21300180: PoP-sprite-sheet-example_90
+    21300182: PoP-sprite-sheet-example_91
+    21300184: PoP-sprite-sheet-example_92
+    21300186: PoP-sprite-sheet-example_93
+    21300188: PoP-sprite-sheet-example_94
+    21300190: PoP-sprite-sheet-example_95
+    21300192: PoP-sprite-sheet-example_96
+    21300194: PoP-sprite-sheet-example_97
+    21300196: PoP-sprite-sheet-example_98
+    21300198: PoP-sprite-sheet-example_99
+    21300200: PoP-sprite-sheet-example_100
+    21300202: PoP-sprite-sheet-example_101
+    21300204: PoP-sprite-sheet-example_102
+    21300206: PoP-sprite-sheet-example_103
+    21300208: PoP-sprite-sheet-example_104
+    21300210: PoP-sprite-sheet-example_105
+    21300212: PoP-sprite-sheet-example_106
+    21300214: PoP-sprite-sheet-example_107
+    21300216: PoP-sprite-sheet-example_108
+    21300218: PoP-sprite-sheet-example_109
+    21300220: PoP-sprite-sheet-example_110
+    21300222: PoP-sprite-sheet-example_111
+    21300224: PoP-sprite-sheet-example_112
+    21300226: PoP-sprite-sheet-example_113
+    21300228: PoP-sprite-sheet-example_114
+    21300230: PoP-sprite-sheet-example_115
+    21300232: PoP-sprite-sheet-example_116
+    21300234: PoP-sprite-sheet-example_117
+    21300236: PoP-sprite-sheet-example_118
+    21300238: PoP-sprite-sheet-example_119
+    21300240: PoP-sprite-sheet-example_120
+    21300242: PoP-sprite-sheet-example_121
+    21300244: PoP-sprite-sheet-example_122
+    21300246: PoP-sprite-sheet-example_123
+    21300248: PoP-sprite-sheet-example_124
+    21300250: PoP-sprite-sheet-example_125
+    21300252: PoP-sprite-sheet-example_126
+    21300254: PoP-sprite-sheet-example_127
+    21300256: PoP-sprite-sheet-example_128
+    21300258: PoP-sprite-sheet-example_129
+    21300260: PoP-sprite-sheet-example_130
+    21300262: PoP-sprite-sheet-example_131
+    21300264: PoP-sprite-sheet-example_132
+    21300266: PoP-sprite-sheet-example_133
+    21300268: PoP-sprite-sheet-example_134
+    21300270: PoP-sprite-sheet-example_135
+    21300272: PoP-sprite-sheet-example_136
+    21300274: PoP-sprite-sheet-example_137
+    21300276: PoP-sprite-sheet-example_138
+    21300278: PoP-sprite-sheet-example_139
+    21300280: PoP-sprite-sheet-example_140
+    21300282: PoP-sprite-sheet-example_141
+    21300284: PoP-sprite-sheet-example_142
+    21300286: PoP-sprite-sheet-example_143
+    21300288: PoP-sprite-sheet-example_144
+    21300290: PoP-sprite-sheet-example_145
+    21300292: PoP-sprite-sheet-example_146
+    21300294: PoP-sprite-sheet-example_147
+    21300296: PoP-sprite-sheet-example_148
+    21300298: PoP-sprite-sheet-example_149
+    21300300: PoP-sprite-sheet-example_150
+    21300302: PoP-sprite-sheet-example_151
+    21300304: PoP-sprite-sheet-example_152
+    21300306: PoP-sprite-sheet-example_153
+    21300308: PoP-sprite-sheet-example_154
+    21300310: PoP-sprite-sheet-example_155
+    21300312: PoP-sprite-sheet-example_156
+    21300314: PoP-sprite-sheet-example_157
+    21300316: PoP-sprite-sheet-example_158
+    21300318: PoP-sprite-sheet-example_159
+    21300320: PoP-sprite-sheet-example_160
+    21300322: PoP-sprite-sheet-example_161
+    21300324: PoP-sprite-sheet-example_162
+    21300326: PoP-sprite-sheet-example_163
+    21300328: PoP-sprite-sheet-example_164
+    21300330: PoP-sprite-sheet-example_165
+    21300332: PoP-sprite-sheet-example_166
+    21300334: PoP-sprite-sheet-example_167
+    21300336: PoP-sprite-sheet-example_168
+    21300338: PoP-sprite-sheet-example_169
+    21300340: PoP-sprite-sheet-example_170
+    21300342: PoP-sprite-sheet-example_171
+    21300344: PoP-sprite-sheet-example_172
+    21300346: PoP-sprite-sheet-example_173
+    21300348: PoP-sprite-sheet-example_174
+    21300350: PoP-sprite-sheet-example_175
+    21300352: PoP-sprite-sheet-example_176
+    21300354: PoP-sprite-sheet-example_177
+    21300356: PoP-sprite-sheet-example_178
+    21300358: PoP-sprite-sheet-example_179
+    21300360: PoP-sprite-sheet-example_180
+    21300362: PoP-sprite-sheet-example_181
+    21300364: PoP-sprite-sheet-example_182
+    21300366: PoP-sprite-sheet-example_183
+    21300368: PoP-sprite-sheet-example_184
+    21300370: PoP-sprite-sheet-example_185
+    21300372: PoP-sprite-sheet-example_186
+    21300374: PoP-sprite-sheet-example_187
+    21300376: PoP-sprite-sheet-example_188
+    21300378: PoP-sprite-sheet-example_189
+    21300380: PoP-sprite-sheet-example_190
+    21300382: PoP-sprite-sheet-example_191
+    21300384: PoP-sprite-sheet-example_192
+    21300386: PoP-sprite-sheet-example_193
+    21300388: PoP-sprite-sheet-example_194
+    21300390: PoP-sprite-sheet-example_195
+    21300392: PoP-sprite-sheet-example_196
+    21300394: PoP-sprite-sheet-example_197
+    21300396: PoP-sprite-sheet-example_198
+    21300398: PoP-sprite-sheet-example_199
+    21300400: PoP-sprite-sheet-example_200
+    21300402: PoP-sprite-sheet-example_201
+    21300404: PoP-sprite-sheet-example_202
+    21300406: PoP-sprite-sheet-example_203
+    21300408: PoP-sprite-sheet-example_204
+    21300410: PoP-sprite-sheet-example_205
+    21300412: PoP-sprite-sheet-example_206
+    21300414: PoP-sprite-sheet-example_207
+    21300416: PoP-sprite-sheet-example_208
+    21300418: PoP-sprite-sheet-example_209
+    21300420: PoP-sprite-sheet-example_210
+    21300422: PoP-sprite-sheet-example_211
+    21300424: PoP-sprite-sheet-example_212
+    21300426: PoP-sprite-sheet-example_213
+    21300428: PoP-sprite-sheet-example_214
+    21300430: PoP-sprite-sheet-example_215
+    21300432: PoP-sprite-sheet-example_216
+    21300434: PoP-sprite-sheet-example_217
+    21300436: PoP-sprite-sheet-example_218
+    21300438: PoP-sprite-sheet-example_219
+    21300440: PoP-sprite-sheet-example_220
+    21300442: PoP-sprite-sheet-example_221
+    21300444: PoP-sprite-sheet-example_222
+    21300446: PoP-sprite-sheet-example_223
+    21300448: PoP-sprite-sheet-example_224
+    21300450: PoP-sprite-sheet-example_225
+    21300452: PoP-sprite-sheet-example_226
+    21300454: PoP-sprite-sheet-example_227
+    21300456: PoP-sprite-sheet-example_228
+    21300458: PoP-sprite-sheet-example_229
+    21300460: PoP-sprite-sheet-example_230
+    21300462: PoP-sprite-sheet-example_231
+    21300464: PoP-sprite-sheet-example_232
+    21300466: PoP-sprite-sheet-example_233
+    21300468: PoP-sprite-sheet-example_234
+    21300470: PoP-sprite-sheet-example_235
+    21300472: PoP-sprite-sheet-example_236
+    21300474: PoP-sprite-sheet-example_237
+    21300476: PoP-sprite-sheet-example_238
+    21300478: PoP-sprite-sheet-example_239
+    21300480: PoP-sprite-sheet-example_240
+    21300482: PoP-sprite-sheet-example_241
+    21300484: PoP-sprite-sheet-example_242
+    21300486: PoP-sprite-sheet-example_243
+    21300488: PoP-sprite-sheet-example_244
+    21300490: PoP-sprite-sheet-example_245
+    21300492: PoP-sprite-sheet-example_246
+    21300494: PoP-sprite-sheet-example_247
+    21300496: PoP-sprite-sheet-example_248
+    21300498: PoP-sprite-sheet-example_249
+    21300500: PoP-sprite-sheet-example_250
+    21300502: PoP-sprite-sheet-example_251
+    21300504: PoP-sprite-sheet-example_252
+    21300506: PoP-sprite-sheet-example_253
+    21300508: PoP-sprite-sheet-example_254
+    21300510: PoP-sprite-sheet-example_255
+    21300512: PoP-sprite-sheet-example_256
+    21300514: PoP-sprite-sheet-example_257
+    21300516: PoP-sprite-sheet-example_258
+    21300518: PoP-sprite-sheet-example_259
+    21300520: PoP-sprite-sheet-example_260
+    21300522: PoP-sprite-sheet-example_261
+    21300524: PoP-sprite-sheet-example_262
+    21300526: PoP-sprite-sheet-example_263
+    21300528: PoP-sprite-sheet-example_264
+    21300530: PoP-sprite-sheet-example_265
+    21300532: PoP-sprite-sheet-example_266
+    21300534: PoP-sprite-sheet-example_267
+    21300536: PoP-sprite-sheet-example_268
+    21300538: PoP-sprite-sheet-example_269
+    21300540: PoP-sprite-sheet-example_270
+    21300542: PoP-sprite-sheet-example_271
+    21300544: PoP-sprite-sheet-example_272
+    21300546: PoP-sprite-sheet-example_273
+    21300548: PoP-sprite-sheet-example_274
+    21300550: PoP-sprite-sheet-example_275
+    21300552: PoP-sprite-sheet-example_276
+    21300554: PoP-sprite-sheet-example_277
+    21300556: PoP-sprite-sheet-example_278
+    21300558: PoP-sprite-sheet-example_279
+    21300560: PoP-sprite-sheet-example_280
+    21300562: PoP-sprite-sheet-example_281
+    21300564: PoP-sprite-sheet-example_282
+    21300566: PoP-sprite-sheet-example_283
+    21300568: PoP-sprite-sheet-example_284
+    21300570: PoP-sprite-sheet-example_285
+    21300572: PoP-sprite-sheet-example_286
+    21300574: PoP-sprite-sheet-example_287
+    21300576: PoP-sprite-sheet-example_288
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 54
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 229
+        width: 44
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 230
+        width: 59
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 228
+        width: 62
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 230
+        width: 52
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 229
+        width: 47
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 229
+        width: 64
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 229
+        width: 61
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 229
+        width: 50
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_8
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 230
+        width: 50
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_9
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 230
+        width: 50
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_10
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 229
+        width: 41
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_11
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 228
+        width: 34
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_12
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 227
+        width: 31
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_13
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 225
+        width: 22
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 101
+        width: 33
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 107
+        width: 33
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_16
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 143
+        width: 42
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: -0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_17
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 146
+        width: 63
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_18
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 146
+        width: 70
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_19
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 145
+        width: 60
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_20
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 145
+        width: 39
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_21
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 146
+        width: 35
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_23
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 144
+        width: 28
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_24
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 145
+        width: 78
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_25
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 96
+        width: 95
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 11
+        width: 58
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_27
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 10
+        width: 86
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_28
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 23
+        width: 83
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_29
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 17
+        width: 102
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_30
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 9
+        width: 88
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_31
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 7
+        width: 66
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_32
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 4
+        width: 29
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_33
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 4
+        width: 76
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_34
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 4
+        width: 68
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_35
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3
+        width: 58
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_36
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1
+        width: 68
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_37
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 144
+        width: 46
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: -0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PoP-sprite-sheet-example_38
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 141
+        width: 128
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

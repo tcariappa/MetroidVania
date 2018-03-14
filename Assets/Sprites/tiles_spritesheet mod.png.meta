@@ -1,0 +1,4098 @@
+fileFormatVersion: 2
+guid: 91631e5fe90bf204e8e6a81cf848a04c
+timeCreated: 1516799309
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: '! yellow framed'
+    21300002: tiles_spritesheet mod_1
+    21300004: tiles_spritesheet mod_2
+    21300006: tiles_spritesheet mod_3
+    21300008: tiles_spritesheet mod_4
+    21300010: tiles_spritesheet mod_5
+    21300012: tiles_spritesheet mod_6
+    21300014: tiles_spritesheet mod_7
+    21300016: slope hard E
+    21300018: grass alone
+    21300020: tiles_spritesheet mod_10
+    21300022: tiles_spritesheet mod_11
+    21300024: tiles_spritesheet mod_12
+    21300026: tiles_spritesheet mod_13
+    21300028: tiles_spritesheet mod_14
+    21300030: tiles_spritesheet mod_15
+    21300032: tiles_spritesheet mod_16
+    21300034: tiles_spritesheet mod_17
+    21300036: tiles_spritesheet mod_18
+    21300038: tiles_spritesheet mod_19
+    21300040: ground next slope hard W
+    21300042: tiles_spritesheet mod_21
+    21300044: tiles_spritesheet mod_22
+    21300046: tiles_spritesheet mod_23
+    21300048: '! yellow rivets'
+    21300050: tiles_spritesheet mod_25
+    21300052: tiles_spritesheet mod_26
+    21300054: tiles_spritesheet mod_27
+    21300056: tiles_spritesheet mod_28
+    21300058: tiles_spritesheet mod_29
+    21300060: tiles_spritesheet mod_30
+    21300062: tiles_spritesheet mod_31
+    21300064: slope hard W
+    21300066: tiles_spritesheet mod_33
+    21300068: tiles_spritesheet mod_34
+    21300070: tiles_spritesheet mod_35
+    21300072: tiles_spritesheet mod_36
+    21300074: tiles_spritesheet mod_37
+    21300076: tiles_spritesheet mod_38
+    21300078: tiles_spritesheet mod_39
+    21300080: tiles_spritesheet mod_40
+    21300082: tiles_spritesheet mod_41
+    21300084: tiles_spritesheet mod_42
+    21300086: tiles_spritesheet mod_43
+    21300088: pf R
+    21300090: tiles_spritesheet mod_45
+    21300092: tiles_spritesheet mod_46
+    21300094: tiles_spritesheet mod_47
+    21300096: tiles_spritesheet mod_48
+    21300098: tiles_spritesheet mod_49
+    21300100: tiles_spritesheet mod_50
+    21300102: tiles_spritesheet mod_51
+    21300104: tiles_spritesheet mod_52
+    21300106: tiles_spritesheet mod_53
+    21300108: tiles_spritesheet mod_54
+    21300110: tiles_spritesheet mod_55
+    21300112: pf mid
+    21300114: tiles_spritesheet mod_57
+    21300116: tiles_spritesheet mod_58
+    21300118: tiles_spritesheet mod_59
+    21300120: tiles_spritesheet mod_60
+    21300122: tiles_spritesheet mod_61
+    21300124: tiles_spritesheet mod_62
+    21300126: tiles_spritesheet mod_63
+    21300128: tiles_spritesheet mod_64
+    21300130: tiles_spritesheet mod_65
+    21300132: tiles_spritesheet mod_66
+    21300134: tiles_spritesheet mod_67
+    21300136: pf L
+    21300138: tiles_spritesheet mod_69
+    21300140: tiles_spritesheet mod_70
+    21300142: tiles_spritesheet mod_71
+    21300144: tiles_spritesheet mod_72
+    21300146: tiles_spritesheet mod_73
+    21300148: tiles_spritesheet mod_74
+    21300150: tiles_spritesheet mod_75
+    21300152: tiles_spritesheet mod_76
+    21300154: tiles_spritesheet mod_77
+    21300156: tiles_spritesheet mod_78
+    21300158: tiles_spritesheet mod_79
+    21300160: pf alone
+    21300162: tiles_spritesheet mod_81
+    21300164: tiles_spritesheet mod_82
+    21300166: tiles_spritesheet mod_83
+    21300168: tiles_spritesheet mod_84
+    21300170: tiles_spritesheet mod_85
+    21300172: tiles_spritesheet mod_86
+    21300174: tiles_spritesheet mod_87
+    21300176: tiles_spritesheet mod_88
+    21300178: tiles_spritesheet mod_89
+    21300180: tiles_spritesheet mod_90
+    21300182: grass band R
+    21300184: tiles_spritesheet mod_92
+    21300186: tiles_spritesheet mod_93
+    21300188: tiles_spritesheet mod_94
+    21300190: tiles_spritesheet mod_95
+    21300192: tiles_spritesheet mod_96
+    21300194: tiles_spritesheet mod_97
+    21300196: tiles_spritesheet mod_98
+    21300198: tiles_spritesheet mod_99
+    21300200: tiles_spritesheet mod_100
+    21300202: tiles_spritesheet mod_101
+    21300204: tiles_spritesheet mod_102
+    21300206: grass mid
+    21300208: grass corner R
+    21300210: tiles_spritesheet mod_105
+    21300212: tiles_spritesheet mod_106
+    21300214: tiles_spritesheet mod_107
+    21300216: tiles_spritesheet mod_108
+    21300218: tiles_spritesheet mod_109
+    21300220: tiles_spritesheet mod_110
+    21300222: tiles_spritesheet mod_111
+    21300224: tiles_spritesheet mod_112
+    21300226: tiles_spritesheet mod_113
+    21300228: tiles_spritesheet mod_114
+    21300230: grass band L
+    21300232: tiles_spritesheet mod_116
+    21300234: tiles_spritesheet mod_117
+    21300236: tiles_spritesheet mod_118
+    21300238: tiles_spritesheet mod_119
+    21300240: tiles_spritesheet mod_120
+    21300242: tiles_spritesheet mod_121
+    21300244: tiles_spritesheet mod_122
+    21300246: tiles_spritesheet mod_123
+    21300248: tiles_spritesheet mod_124
+    21300250: tiles_spritesheet mod_125
+    21300252: tiles_spritesheet mod_126
+    21300254: grass corner L
+    21300256: tiles_spritesheet mod_128
+    21300258: tiles_spritesheet mod_129
+    21300260: tiles_spritesheet mod_130
+    21300262: tiles_spritesheet mod_131
+    21300264: tiles_spritesheet mod_132
+    21300266: tiles_spritesheet mod_133
+    21300268: tiles_spritesheet mod_134
+    21300270: tiles_spritesheet mod_135
+    21300272: tiles_spritesheet mod_136
+    21300274: tiles_spritesheet mod_137
+    21300276: ground alone
+    21300278: tiles_spritesheet mod_139
+    21300280: slope soft E top
+    21300282: slope soft E bottom
+    21300284: tiles_spritesheet mod_142
+    21300286: tiles_spritesheet mod_143
+    21300288: tiles_spritesheet mod_144
+    21300290: tiles_spritesheet mod_145
+    21300292: tiles_spritesheet mod_146
+    21300294: tiles_spritesheet mod_147
+    21300296: tiles_spritesheet mod_148
+    21300298: ground next slope hard E
+    21300300: ground mid
+    21300302: tiles_spritesheet mod_151
+    21300304: slope soft W bottom
+    21300306: slope soft W top
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 70
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '! yellow framed'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 34}
+        - {x: -19, y: 34}
+        - {x: -30, y: 21}
+        - {x: -33, y: 17}
+        - {x: -33, y: -35}
+        - {x: 30, y: -35}
+        - {x: 33, y: -34}
+        - {x: 33, y: 17}
+        - {x: 23, y: 33}
+      physicsShape:
+      - - {x: -18, y: 33}
+        - {x: -33, y: 25}
+        - {x: -33, y: -35}
+        - {x: 32, y: -35}
+        - {x: 32, y: 23}
+        - {x: 25, y: 33}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -13}
+        - {x: -6, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -20}
+        - {x: 0, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -32}
+        - {x: -32, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -33}
+        - {x: -33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -5}
+        - {x: 35, y: -5}
+        - {x: 35, y: 4}
+        - {x: -35, y: 4}
+      physicsShape:
+      - - {x: -35, y: -5}
+        - {x: 35, y: -5}
+        - {x: 35, y: 4}
+        - {x: -35, y: 4}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: slope hard E
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -32}
+        - {x: -32, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass alone
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -32}
+        - {x: -32, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -33}
+        - {x: -33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_11
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 866
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 19}
+        - {x: -16, y: -35}
+        - {x: 13, y: -35}
+        - {x: 16, y: -34}
+        - {x: 16, y: 19}
+      physicsShape:
+      - - {x: -9, y: 19}
+        - {x: -16, y: 18}
+        - {x: -16, y: -28}
+        - {x: -8, y: -35}
+        - {x: 6, y: -35}
+        - {x: 16, y: -32}
+        - {x: 16, y: 18}
+        - {x: 15, y: 19}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -3}
+        - {x: -31, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -6}
+        - {x: -32, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -13}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -13}
+      physicsShape:
+      - - {x: -34, y: -13}
+        - {x: -35, y: -15}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -16}
+        - {x: 31, y: -13}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 35}
+        - {x: -35, y: 34}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: 35, y: -35}
+        - {x: 35, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_18
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 35}
+        - {x: -10, y: -31}
+        - {x: -5, y: -35}
+        - {x: 10, y: -35}
+        - {x: 10, y: 35}
+      physicsShape:
+      - - {x: -10, y: 35}
+        - {x: -10, y: -31}
+        - {x: -5, y: -35}
+        - {x: 10, y: -35}
+        - {x: 10, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_19
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      - - {x: -19, y: 4}
+        - {x: 19, y: 4}
+        - {x: 19, y: -3}
+        - {x: -19, y: -3}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      - - {x: -20, y: 5}
+        - {x: 20, y: 5}
+        - {x: 20, y: -4}
+        - {x: -20, y: -4}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ground next slope hard W
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_21
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 26}
+        - {x: 33, y: 28}
+        - {x: 24, y: 28}
+        - {x: 19, y: 22}
+        - {x: -20, y: 28}
+        - {x: -33, y: 28}
+        - {x: -35, y: 26}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+      physicsShape:
+      - - {x: 21, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 27}
+        - {x: -35, y: 27}
+        - {x: -35, y: -35}
+        - {x: -15, y: -35}
+        - {x: 5, y: -17}
+        - {x: -4, y: -10}
+        - {x: 21, y: -2}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_23
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 794
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: '! yellow rivets'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 35}
+        - {x: -11, y: 35}
+        - {x: -14, y: 34}
+        - {x: -17, y: 17}
+        - {x: -17, y: -34}
+        - {x: -15, y: -35}
+        - {x: 7, y: -35}
+        - {x: 15, y: -32}
+        - {x: 15, y: 14}
+        - {x: 7, y: 34}
+      physicsShape:
+      - - {x: -2, y: 35}
+        - {x: -10, y: 30}
+        - {x: -17, y: 18}
+        - {x: -17, y: -27}
+        - {x: -16, y: -32}
+        - {x: -11, y: -34}
+        - {x: 7, y: -34}
+        - {x: 15, y: -32}
+        - {x: 15, y: 10}
+        - {x: 4, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_27
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_29
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 35}
+        - {x: -35, y: -32}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: 33, y: 35}
+        - {x: -35, y: -33}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_30
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -32}
+        - {x: -32, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -33}
+        - {x: -33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_31
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      - - {x: -19, y: 4}
+        - {x: 19, y: 4}
+        - {x: 19, y: -3}
+        - {x: -19, y: -3}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      - - {x: -20, y: 5}
+        - {x: 20, y: 5}
+        - {x: 20, y: -4}
+        - {x: -20, y: -4}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: slope hard W
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 35}
+        - {x: -35, y: -32}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_33
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 28}
+        - {x: 19, y: 22}
+        - {x: -20, y: 28}
+        - {x: -33, y: 28}
+        - {x: -35, y: 26}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 26}
+        - {x: 33, y: 28}
+      physicsShape:
+      - - {x: -35, y: 27}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 27}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_34
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 35}
+        - {x: -35, y: -32}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: 33, y: 35}
+        - {x: -35, y: -33}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_35
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 722
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_37
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 35}
+        - {x: -7, y: 35}
+        - {x: -16, y: 17}
+        - {x: -16, y: -27}
+        - {x: -15, y: -33}
+        - {x: -12, y: -35}
+        - {x: 12, y: -35}
+        - {x: 16, y: -28}
+        - {x: 16, y: 25}
+        - {x: 13, y: 30}
+      physicsShape:
+      - - {x: 5, y: 35}
+        - {x: -5, y: 35}
+        - {x: -16, y: 19}
+        - {x: -16, y: -31}
+        - {x: -10, y: -34}
+        - {x: 5, y: -34}
+        - {x: 14, y: -31}
+        - {x: 16, y: -25}
+        - {x: 16, y: 16}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_38
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 35, y: 8}
+        - {x: 35, y: 33}
+      physicsShape:
+      - - {x: 32, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -9, y: -35}
+        - {x: -6, y: -30}
+        - {x: 35, y: 9}
+        - {x: 35, y: 32}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_39
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -32}
+        - {x: -32, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -33}
+        - {x: -33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 35}
+        - {x: -34, y: 26}
+        - {x: -34, y: -8}
+        - {x: -31, y: -9}
+        - {x: -16, y: -35}
+        - {x: 2, y: -35}
+        - {x: 34, y: -2}
+        - {x: 34, y: 30}
+        - {x: 18, y: 35}
+      physicsShape:
+      - - {x: 21, y: 35}
+        - {x: -18, y: 35}
+        - {x: -33, y: 29}
+        - {x: -33, y: -28}
+        - {x: -17, y: -35}
+        - {x: 19, y: -35}
+        - {x: 34, y: -3}
+        - {x: 34, y: 18}
+        - {x: 33, y: 24}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_41
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 29, y: -8}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 30, y: -7}
+        - {x: 35, y: -5}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_42
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 35}
+        - {x: -35, y: -32}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: 33, y: 35}
+        - {x: -35, y: -33}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_43
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pf R
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 31, y: -7}
+        - {x: 35, y: -3}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -5}
+        - {x: 35, y: -5}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_45
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 7}
+        - {x: -17, y: 7}
+        - {x: -29, y: 0}
+        - {x: -35, y: -10}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -9}
+        - {x: 25, y: 4}
+      physicsShape:
+      - - {x: 23, y: 7}
+        - {x: -23, y: 7}
+        - {x: -35, y: -7}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -9}
+        - {x: 27, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_46
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 29, y: -8}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 30, y: -7}
+        - {x: 35, y: -5}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_47
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 650
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_50
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 2, y: -35}
+        - {x: 35, y: -18}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 34, y: -35}
+        - {x: 35, y: -28}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_51
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_52
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 35}
+        - {x: -33, y: 17}
+        - {x: -33, y: -8}
+        - {x: -17, y: -27}
+        - {x: -10, y: -35}
+        - {x: 17, y: -35}
+        - {x: 35, y: -9}
+        - {x: 35, y: 32}
+        - {x: 21, y: 35}
+      physicsShape:
+      - - {x: -24, y: 35}
+        - {x: -32, y: 16}
+        - {x: -32, y: -4}
+        - {x: 0, y: -35}
+        - {x: 16, y: -35}
+        - {x: 34, y: -11}
+        - {x: 34, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_53
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 35, y: -8}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_54
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_55
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pf mid
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -5}
+        - {x: 35, y: -5}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_57
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_58
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 35, y: -8}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_59
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 35, y: 4}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -35}
+        - {x: 12, y: -35}
+        - {x: 35, y: 8}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_61
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_62
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: 8}
+        - {x: 9, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: 8}
+        - {x: 9, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_63
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 35}
+        - {x: -35, y: -32}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: 33, y: 35}
+        - {x: -35, y: -33}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_64
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 35}
+        - {x: -35, y: 30}
+        - {x: -35, y: -19}
+        - {x: -23, y: -35}
+        - {x: 10, y: -35}
+        - {x: 35, y: -18}
+        - {x: 35, y: 30}
+        - {x: 20, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -20}
+        - {x: -28, y: -35}
+        - {x: 13, y: -35}
+        - {x: 35, y: -16}
+        - {x: 35, y: 31}
+        - {x: 34, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_65
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -5}
+        - {x: -30, y: -8}
+        - {x: 35, y: -8}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -3}
+        - {x: -33, y: -5}
+        - {x: -30, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_66
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_67
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pf L
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -3}
+        - {x: -31, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -5}
+        - {x: 35, y: -5}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_69
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 7}
+        - {x: -23, y: 7}
+        - {x: -35, y: -5}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -9}
+        - {x: 26, y: 6}
+      physicsShape:
+      - - {x: 23, y: 7}
+        - {x: -23, y: 7}
+        - {x: -35, y: -7}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -8}
+        - {x: 31, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_70
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -5}
+        - {x: -30, y: -8}
+        - {x: 35, y: -8}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -3}
+        - {x: -33, y: -5}
+        - {x: -30, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_71
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 506
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -3}
+        - {x: -30, y: -7}
+        - {x: 30, y: -7}
+        - {x: 35, y: -3}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_73
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_74
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -13}
+        - {x: -6, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 34}
+        - {x: -35, y: -15}
+        - {x: -2, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_75
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 29, y: -8}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 30, y: -7}
+        - {x: 35, y: -5}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_76
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 35}
+        - {x: -35, y: 30}
+        - {x: -35, y: -19}
+        - {x: -23, y: -35}
+        - {x: 10, y: -35}
+        - {x: 35, y: -18}
+        - {x: 35, y: 30}
+        - {x: 20, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -20}
+        - {x: -28, y: -35}
+        - {x: 13, y: -35}
+        - {x: 35, y: -16}
+        - {x: 35, y: 31}
+        - {x: 34, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_77
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 30, y: -8}
+        - {x: 35, y: -5}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_78
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_79
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pf alone
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -5}
+        - {x: 35, y: -5}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_81
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_82
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 30, y: -8}
+        - {x: 35, y: -5}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_83
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 434
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_85
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_86
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 35}
+        - {x: -35, y: 34}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: 35, y: -35}
+        - {x: 35, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_87
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 35, y: -8}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_88
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_89
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -7, y: -35}
+        - {x: 35, y: 8}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 35, y: 9}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_90
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass band R
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_92
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 35, y: 8}
+        - {x: 35, y: 33}
+      physicsShape:
+      - - {x: 35, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -12, y: -35}
+        - {x: 35, y: 11}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_93
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_94
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -7, y: -35}
+        - {x: 35, y: 8}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 35, y: 9}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_95
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 362
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -32}
+        - {x: -32, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -33}
+        - {x: -33, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_97
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_98
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_99
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -5}
+        - {x: -30, y: -8}
+        - {x: 35, y: -8}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -3}
+        - {x: -33, y: -5}
+        - {x: -30, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_100
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_101
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -3, y: -35}
+        - {x: 14, y: -33}
+        - {x: 35, y: -11}
+        - {x: 35, y: 34}
+        - {x: 34, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 28, y: -35}
+        - {x: 35, y: -14}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_102
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 12}
+        - {x: -35, y: 8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 11}
+        - {x: 28, y: 12}
+      physicsShape:
+      - - {x: 8, y: 11}
+        - {x: -35, y: 8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 9}
+        - {x: 30, y: 11}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass mid
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass corner R
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 2, y: -35}
+        - {x: 35, y: -18}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -17, y: -35}
+        - {x: 35, y: 1}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_105
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 35}
+        - {x: -35, y: -32}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: 33, y: 35}
+        - {x: -35, y: -33}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_106
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -3, y: -35}
+        - {x: 14, y: -33}
+        - {x: 35, y: -11}
+        - {x: 35, y: 34}
+        - {x: 34, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 28, y: -35}
+        - {x: 35, y: -14}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_107
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 290
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_109
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: 35, y: -35}
+        - {x: 35, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_111
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -8}
+        - {x: 30, y: -8}
+        - {x: 35, y: -5}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_112
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_113
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: 8}
+        - {x: 9, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: 9}
+        - {x: 10, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_114
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 12}
+        - {x: -35, y: 8}
+        - {x: -35, y: -34}
+        - {x: -34, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 11}
+        - {x: 28, y: 12}
+      physicsShape:
+      - - {x: -23, y: 11}
+        - {x: -35, y: 8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 11}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass band L
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_116
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: 8}
+        - {x: 9, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: 9}
+        - {x: 10, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_117
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_118
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 218
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 35}
+        - {x: -35, y: 34}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: 35, y: -35}
+        - {x: 35, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_120
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_121
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_122
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -7, y: -35}
+        - {x: 35, y: 8}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 35, y: 9}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_123
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -9}
+        - {x: 33, y: -8}
+      physicsShape:
+      - - {x: -35, y: -8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_124
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -13}
+        - {x: -6, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -20}
+        - {x: 0, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_125
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -3}
+        - {x: -31, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -3}
+        - {x: -30, y: -7}
+        - {x: 35, y: -7}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_126
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass corner L
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -13}
+        - {x: -6, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: 0}
+        - {x: 18, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_128
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: 7}
+        - {x: 6, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: 8}
+        - {x: 9, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_129
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 146
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_131
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_132
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_133
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -3, y: -35}
+        - {x: 14, y: -33}
+        - {x: 35, y: -11}
+        - {x: 35, y: 34}
+        - {x: 34, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 28, y: -35}
+        - {x: 35, y: -14}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_134
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_135
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_136
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 12}
+        - {x: -35, y: 8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 11}
+        - {x: 28, y: 12}
+      physicsShape:
+      - - {x: 8, y: 11}
+        - {x: -35, y: 8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 9}
+        - {x: 30, y: 11}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_137
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -13}
+        - {x: -12, y: -32}
+        - {x: 2, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -14, y: -26}
+        - {x: -3, y: -31}
+        - {x: 9, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -7}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ground alone
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 35}
+        - {x: -35, y: 34}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: 35, y: -35}
+        - {x: 35, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_139
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -35}
+        - {x: -3, y: -35}
+        - {x: 22, y: -25}
+        - {x: 35, y: -9}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 19, y: -26}
+        - {x: 35, y: -8}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: slope soft E top
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 3}
+        - {x: -29, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 0}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: slope soft E bottom
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 74
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 2}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: -32}
+        - {x: -33, y: 2}
+      physicsShape:
+      - - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: -35, y: -1}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_142
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 32, y: -35}
+        - {x: 35, y: -32}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_143
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 31, y: -7}
+        - {x: 35, y: -3}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -7}
+        - {x: 30, y: -7}
+        - {x: 35, y: -3}
+        - {x: 35, y: 32}
+        - {x: 32, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_144
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: -32}
+        - {x: -32, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_145
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 35}
+        - {x: -35, y: 33}
+        - {x: -35, y: 8}
+        - {x: 9, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -32, y: 35}
+        - {x: -35, y: 32}
+        - {x: -35, y: 9}
+        - {x: 10, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_146
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_147
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: -35}
+        - {x: 5, y: 35}
+        - {x: -4, y: 35}
+        - {x: -4, y: -35}
+      physicsShape:
+      - - {x: 5, y: -35}
+        - {x: 5, y: 35}
+        - {x: -4, y: 35}
+        - {x: -4, y: -35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_148
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 12}
+        - {x: -35, y: 8}
+        - {x: -35, y: -34}
+        - {x: -34, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 11}
+        - {x: 28, y: 12}
+      physicsShape:
+      - - {x: -23, y: 11}
+        - {x: -35, y: 8}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 11}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ground next slope hard E
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ground mid
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles_spritesheet mod_151
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: slope soft W bottom
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -32}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 2}
+        - {x: 33, y: 2}
+      physicsShape:
+      - - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 0}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: slope soft W top
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 35}
+        - {x: -35, y: 3}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      physicsShape:
+      - - {x: -35, y: 0}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: tiled2unity
+  assetBundleName: 
+  assetBundleVariant: 
