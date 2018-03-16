@@ -887,6 +887,7 @@ public class PCController : MonoBehaviour
 
             for (var i=0; i < colls.Length; i++)
             {
+                print("Detected " + colls[i].name);
                 if (colls[i].gameObject.layer == Alias.LAYER_ENEMIES)
                 {
                     enemyRb = colls[i].gameObject.GetComponent<Rigidbody2D>();
@@ -1346,7 +1347,7 @@ public class PCController : MonoBehaviour
     Vector2 castLineFromAbove(Vector2 endPt)
     {
         Vector2 startPt = new Vector2(endPt.x, endPt.y + 0.4f);
-        RaycastHit2D hit = Physics2D.Linecast(startPt, endPt, Alias.LAYERMASK_TILEMAP);
+        RaycastHit2D hit = Physics2D.Linecast(startPt, endPt, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
         if (!hit)
         {
             Debug.LogError("There should be a hit point with the tilemap between " + startPt + " and " + endPt);//DEBUG

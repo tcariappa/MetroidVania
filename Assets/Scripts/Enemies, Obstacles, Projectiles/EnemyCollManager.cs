@@ -30,7 +30,7 @@ public class EnemyCollManager : MonoBehaviour
 	void OnCollisionStay2D(Collision2D otherCol)
 	{
 		//check if collide with map
-		if (isMapDamaging && otherCol.gameObject.layer == Alias.LAYER_TILEMAP)
+		if (isMapDamaging && (otherCol.gameObject.layer == Alias.LAYER_TILEMAP || otherCol.gameObject.layer == Alias.LAYER_BREAKABLE_SURFACE))
 			healthManager.gotMapHit();
 	}
 }

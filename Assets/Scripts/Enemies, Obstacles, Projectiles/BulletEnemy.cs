@@ -25,7 +25,7 @@ public class BulletEnemy : BulletBase
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		//detect collision of enemy's bullet with the map
-		if (col.gameObject.layer == Alias.LAYER_TILEMAP)
+		if (col.gameObject.layer == Alias.LAYER_TILEMAP || col.gameObject.layer == Alias.LAYER_BREAKABLE_SURFACE)
 		{
 			destroyMyself();
 		}

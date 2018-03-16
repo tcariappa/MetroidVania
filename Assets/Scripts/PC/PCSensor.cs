@@ -25,7 +25,7 @@ public class PCSensor : MonoBehaviour
 
 		if (c != null)
 		{
-			if (c.gameObject.layer == Alias.LAYER_TILEMAP)
+			if (c.gameObject.layer == Alias.LAYER_TILEMAP || c.gameObject.layer == Alias.LAYER_BREAKABLE_SURFACE)
 			{
 				isCollTile = true;
 
