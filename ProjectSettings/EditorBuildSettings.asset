@@ -6,11 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/PrototypeLevel.unity
-    guid: 5fbea96ddea26144a89f547f692ff87a
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SceneTest.unity
-    guid: 867ce737a13935f44ada08de2d06b028
+    path: Assets/Scenes/AlphaLevels/Intro_Level.unity
+    guid: 2bfb331551e90c84e82baba7601f5e65
   - enabled: 1
-    path: Assets/Scenes/SceneTest 2.unity
-    guid: eee3113dfe206a042b36fa5f24e41041
+    path: Assets/Scenes/AlphaLevels/Mid_Level.unity
+    guid: e5a014436cef9c24a9ae2755501b50ca
+  - enabled: 1
+    path: Assets/Scenes/AlphaLevels/Climb_Level.unity
+    guid: 4cf6c696b94e9ac48aa1adb115dd064b
+  - enabled: 1
+    path: Assets/Scenes/AlphaLevels/Bounce_Level.unity
+    guid: aca7d8eccbaa40d40affbba403ba1956
+  - enabled: 1
+    path: Assets/Scenes/AlphaLevels/Dash_Level.unity
+    guid: e9871a593e312d045bd85986661d220b
+  - enabled: 1
+    path: Assets/Scenes/AlphaLevels/PowerSlam_Level.unity
+    guid: d257f664ccdd9f342bb5cdc85333a7d2

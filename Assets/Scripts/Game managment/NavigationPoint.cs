@@ -4,7 +4,7 @@ using System.Collections;
 
 public class NavigationPoint : MonoBehaviour
 {
-	private const float SWITCH_RANGE = 5f;
+	private const float SWITCH_RANGE = 2f;
 
 	public bool isCheckpoint = true;
 	public bool isExit = false;
