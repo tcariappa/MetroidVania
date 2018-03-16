@@ -193,7 +193,7 @@ public class PCCollSolidManager : MonoBehaviour
 		refPos = sensor1.position;
 
 		//cast a ray from sensor1 to sensor2 (i.e. downward) to find the floor (i.e. the ledge)
-		RaycastHit2D hit = Physics2D.Linecast(sensor1.position, sensor2.position, Alias.LAYERMASK_TILEMAP);
+		RaycastHit2D hit = Physics2D.Linecast(sensor1.position, sensor2.position, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
 		if (!hit)
 			Debug.LogError("BUG: There should be a ledge under " + sensor1);//DEBUG
 
