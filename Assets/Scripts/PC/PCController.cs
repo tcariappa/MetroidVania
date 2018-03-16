@@ -8,8 +8,8 @@ public class PCController : MonoBehaviour
     {
         idle,
         blocked,
-        running,
-        dashing,
+        running, 
+        dashing, 
         regJumping,
         wallJumping,
         falling,
@@ -118,6 +118,9 @@ public class PCController : MonoBehaviour
     [SerializeField]
     [Tooltip("Damage caused by player slam ability")]
     private float slamDamage = 10.0f;
+    [SerializeField]
+    [Tooltip("The layer that the slam will effect.")]
+    private LayerMask slamLayers;
     [SerializeField]
     [Tooltip("The max number of hits shield can take.")]
     private int shieldMaxHits = 5;
@@ -879,15 +882,20 @@ public class PCController : MonoBehaviour
         if(!collMngr.isInAir)
         {
             goIdle();
-            Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, 1 << LayerMask.NameToLayer("Enemies"));
+            //Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, 1 << LayerMask.NameToLayer("Enemies"));
+            Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, slamLayers);
 
-            for(var i=0; i < colls.Length; i++)
+            for (var i=0; i < colls.Length; i++)
             {
-                enemyRb = colls[i].gameObject.GetComponent<Rigidbody2D>();
-                float delta = rb.position.x - enemyRb.position.x;
-                enemyKnockback = new Vector2(knockForce * Mathf.Sign(-delta), knockForce);
-                enemyRb.AddForce(enemyKnockback, ForceMode2D.Impulse);
-                colls[i].gameObject.GetComponent<EnemyCollManager>().onHitByAttack(slamDamage);
+                if (colls[i].gameObject.layer == Alias.LAYER_ENEMIES)
+                {
+                    enemyRb = colls[i].gameObject.GetComponent<Rigidbody2D>();
+                    float delta = rb.position.x - enemyRb.position.x;
+                    enemyKnockback = new Vector2(knockForce * Mathf.Sign(-delta), knockForce);
+                    enemyRb.AddForce(enemyKnockback, ForceMode2D.Impulse);
+                    colls[i].gameObject.GetComponent<EnemyCollManager>().onHitByAttack(slamDamage);
+                }
+                else Destroy(colls[i].gameObject);
             }
         }
     }
