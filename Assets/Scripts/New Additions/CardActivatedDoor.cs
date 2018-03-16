@@ -16,7 +16,7 @@ public class CardActivatedDoor : MonoBehaviour {
 
     private void Awake()
     {
-        if(blueCardDoor && !keycardDoor)
+        if((blueCardDoor && !keycardDoor) || (!blueCardDoor && !keycardDoor))
         {
             doorSecurityLevel = 5;
         }

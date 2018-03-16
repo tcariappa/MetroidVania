@@ -240,7 +240,7 @@ public class PCController : MonoBehaviour
     private void handleOnPressDash()
     {
         if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.unibikeIdle || currState == State.falling || currState == State.regJumping ||
-            currState == State.bounceJump || currState == State.bounceFall))
+            currState == State.bounceJump || currState == State.bounceFall || currState == State.wallJumping))
             isDashOrdered = true;
         else Debug.Log("Dash is locked");
     }
@@ -368,8 +368,8 @@ public class PCController : MonoBehaviour
             doInSlam();
         }
         //On ground
-        if (currState == State.idle || currState == State.running || 
-            currState == State.blocked || currState == State.unibikeMove || currState == State.shielding || currState == State.unibikeIdle)
+        if (currState == State.idle || currState == State.running || currState == State.blocked 
+            || currState == State.unibikeMove || currState == State.shielding || currState == State.unibikeIdle)
         {
             doInGroundStates();
         }
@@ -1326,7 +1326,7 @@ public class PCController : MonoBehaviour
             startPt = facingDir == Alias.RIGHT ? collMngr.sensorBottomRight.transform.position : collMngr.sensorBottomLeft.transform.position;
             startPt.y += 0.4f;
             //We cast a ray downward
-            RaycastHit2D hit = Physics2D.Raycast(startPt, Vector2.down, 0.8f, Alias.LAYERMASK_TILEMAP);
+            RaycastHit2D hit = Physics2D.Raycast(startPt, Vector2.down, 0.8f, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
             //if the ray hits a tile, we use the tile's normal to get the slope
             if (hit)
             {
@@ -1350,7 +1350,7 @@ public class PCController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Linecast(startPt, endPt, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
         if (!hit)
         {
-            Debug.LogError("There should be a hit point with the tilemap between " + startPt + " and " + endPt);//DEBUG
+            Debug.LogError("There should be a hit point with the tilemap between " + startPt + " and " + endPt);
             return Vector2.zero;
         }
         return hit.point;
