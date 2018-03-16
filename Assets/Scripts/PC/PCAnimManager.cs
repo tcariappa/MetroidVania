@@ -13,10 +13,13 @@ public class PCAnimManager : MonoBehaviour
 	{
         switch (pc.currState)
 		{
-			case PCController.State.idle:
-				animator.SetInteger("state", 0);
-				break;
-			case PCController.State.blocked:
+            case PCController.State.idle:
+                animator.SetInteger("state", 0);
+                break;
+            case PCController.State.unibikeIdle:
+                animator.SetInteger("state", 0);
+                break;
+            case PCController.State.blocked:
 				animator.SetInteger("state", 1);
 				break;
 			case PCController.State.running:          

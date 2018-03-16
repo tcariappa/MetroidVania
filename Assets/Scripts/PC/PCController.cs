@@ -19,6 +19,7 @@ public class PCController : MonoBehaviour
         climbingLedge,
         dying,
         exiting,
+        unibikeIdle,
         unibikeMove,
         unibikeDashing,
         unibikeJumping,
@@ -235,7 +236,7 @@ public class PCController : MonoBehaviour
 
     private void handleOnPressDash()
     {
-        if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.falling || currState == State.regJumping ||
+        if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.unibikeIdle || currState == State.falling || currState == State.regJumping ||
             currState == State.bounceJump || currState == State.bounceFall))
             isDashOrdered = true;
         else Debug.Log("Dash is locked");
@@ -365,7 +366,7 @@ public class PCController : MonoBehaviour
         }
         //On ground
         if (currState == State.idle || currState == State.running || 
-            currState == State.blocked || currState == State.unibikeMove || currState == State.shielding)
+            currState == State.blocked || currState == State.unibikeMove || currState == State.shielding || currState == State.unibikeIdle)
         {
             doInGroundStates();
         }
@@ -398,7 +399,7 @@ public class PCController : MonoBehaviour
         //Processing Jump. WARNING, only HERE we can process Jump in PCController!
         if (isJumpOrdered)
         {
-            if (currState == State.idle || currState == State.running || currState == State.blocked)
+            if (currState == State.idle || currState == State.unibikeIdle || currState == State.running || currState == State.blocked)
             {
                 jumpReg();
             }
@@ -439,7 +440,7 @@ public class PCController : MonoBehaviour
 
         if (isDashOrdered)
         {
-            if (currState == State.idle || currState == State.running || currState == State.regJumping || 
+            if (currState == State.idle || currState == State.unibikeIdle || currState == State.running || currState == State.regJumping || 
                 currState == State.bounceJump || currState == State.falling || currState == State.wallJumping)
             {
                 goDash();
@@ -507,10 +508,42 @@ public class PCController : MonoBehaviour
             //if on bike
             else
             {
-                if (currState == State.unibikeMove)
-                    moveOnBike();
+                if (inputs.movingDir == Alias.RIGHT)
+                {
+                    if (!collMngr.isTouchingRightTile)
+                    {
+                        if (currState == State.unibikeMove)
+                            moveOnBike();
+                        else
+                            goMoveOnBike();
+                    }
+                    else
+                    {
+                        goBlocked();
+                    }
+                    //making sure PC faces right
+                    faceRight();
+                }
+                else if (inputs.movingDir == Alias.LEFT)
+                {
+                    if (!collMngr.isTouchingLeftTile)
+                    {
+                        if (currState == State.unibikeMove)
+                            moveOnBike();
+                        else
+                            goMoveOnBike();
+                    }
+                    else
+                    {
+                        goBlocked();
+                    }
+                    //making sure PC faces left
+                    faceLeft();
+                }
                 else
-                    goMoveOnBike();
+                {
+                    goUnibikeIdle();
+                }
             }
         }
         else
@@ -574,7 +607,9 @@ public class PCController : MonoBehaviour
             }
             else
             {
-                goIdle();
+                if (!isBike)
+                    goIdle();
+                else goUnibikeIdle();
             }
         }
     }
@@ -660,16 +695,6 @@ public class PCController : MonoBehaviour
         Vector2 move;
 
         move = new Vector2(inputs.moveInput.x, 0f);
-
-        if (inputs.movingDir == Alias.LEFT)
-        {
-            faceLeft();
-        }
-        else if (inputs.movingDir == Alias.RIGHT)
-        {
-            faceRight();
-        }
-        else goIdle();
 
         move *= bikeSpeed;
         rb.velocity = move;
@@ -798,6 +823,17 @@ public class PCController : MonoBehaviour
         currState = State.idle;
     }
 
+    void goUnibikeIdle()
+    {
+        applyGravity();
+        rb.velocity = Vector2.zero;
+        movingDir = Alias.STILL;
+
+        canCatchWall = UpgradesManager.List["wall jump"];
+        remainingBounces = maxBounces;
+
+        currState = State.unibikeIdle;
+    }
 
     void jumpReg()
     {

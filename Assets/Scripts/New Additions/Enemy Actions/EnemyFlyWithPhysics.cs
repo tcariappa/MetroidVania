@@ -8,7 +8,6 @@ public class EnemyFlyWithPhysics : MonoBehaviour {
     SpriteRenderer sr;
     public Transform[] trgts;
     public Rigidbody2D rb;
-
     Transform tgt;
     private int currentWpIndex;
 
@@ -20,19 +19,32 @@ public class EnemyFlyWithPhysics : MonoBehaviour {
         tgt = trgts[0];
         //tgt = FindObjectOfType<PCController>().transform;
 	}
-	
-	void Update()
+    private void FixedUpdate()
     {
         Vector2 tgtPos = tgt.position;
-        tgtPos.y += 1.0f;
-        Vector2 newPosition = Vector2.MoveTowards(transform.position, tgtPos, speed * Time.deltaTime);
-        transform.position = newPosition;
+        Vector2 rbDiff = tgtPos - rb.position;
+        Vector2 moveDirection = rbDiff.normalized;
 
-        sr.flipX = tgtPos.x < transform.position.x ? true : false;
+        sr.flipX = tgt.position.x < transform.position.x ? true : false;
 
-        Vector2 diff = tgtPos - newPosition;
-        float dist = diff.magnitude;
+        rb.velocity = moveDirection * speed;
+        //rb.velocity = ((Vector2)tgt.position - rb.position).normalized * speed;  ALTERNATIVE METHOD
+    }
+
+    private void Update()
+    {
+        /*float dist = ((Vector2)tgt.position - rb.position).magnitude;
         if(dist < 0.5f)
+        {
+            doWhenHitObject();
+        } */ 
+        //Do it with OnTriggerEnter2D and make the waypoints on TransparetnFX layer.
+    }
+
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        int layTransparentFX = 1;
+        if(coll.gameObject.layer == layTransparentFX)
         {
             doWhenHitObject();
         }

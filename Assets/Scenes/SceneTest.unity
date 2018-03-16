@@ -20266,7 +20266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorSecurityLevel: 1
-  blueCardDoor: 0
+  blueCardDoor: 1
   keycardDoor: 0
 --- !u!1 &1922934743
 GameObject:
