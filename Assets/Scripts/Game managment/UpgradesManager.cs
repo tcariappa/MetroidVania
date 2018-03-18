@@ -25,6 +25,7 @@ public class UpgradesManager : MonoBehaviour
         { "keycard2", false },
         { "keycard3", false },
         { "keycard4", false },
+        { "keycard5", false },
         { "bluekeycard", false }
     };
 

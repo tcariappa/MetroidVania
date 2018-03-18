@@ -314,7 +314,11 @@ public class PCController : MonoBehaviour
 
     public void keycardCollected()
     {
-        if (UpgradesManager.List["keycard3"])
+        if (UpgradesManager.List["keycard4"])
+        {
+            UpgradesManager.DoOnUpgradePicked("keycard5");
+        }
+        else if (UpgradesManager.List["keycard3"])
         {
             UpgradesManager.DoOnUpgradePicked("keycard4");
         }
