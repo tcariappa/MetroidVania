@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1307733701401986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.772335, y: 20.82791, z: -0.2421875}
+  m_LocalPosition: {x: -5.37, y: -2.4509726, z: -0.2421875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e796ea171b972384abca10e17175b4ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: life 1
+  upgradeName: melee
 --- !u!212 &212803611485447952
 SpriteRenderer:
   m_ObjectHideFlags: 1

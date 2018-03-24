@@ -23,7 +23,23 @@ public class ShieldBlock : MonoBehaviour {
     {
         if (coll.gameObject.layer == Alias.LAYER_ENEMIES)
         {
+            print("Enemy hit");
             if(OnHitShield != null)
+            {
+                OnHitShield();
+            }
+            pc.doShieldHit();
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D colli)
+    {
+        if (colli.gameObject.layer == Alias.LAYER_ENEMY_PROJECTILES)
+        {
+            print("Enemy projectile hit");
+            BulletEnemy bullet = colli.gameObject.GetComponent<BulletEnemy>();
+            bullet.onHitPC();
+
+            if (OnHitShield != null)
             {
                 OnHitShield();
             }

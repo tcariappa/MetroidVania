@@ -70,8 +70,8 @@ public class GameManager : MonoBehaviour
 
 	void handleOnPressQuit()
 	{
-		//We exit the game
-		Application.Quit();
+		//We go bac to the home screen (main menu)
+		SceneManager.LoadScene(0);//4MENU
 	}
 
 

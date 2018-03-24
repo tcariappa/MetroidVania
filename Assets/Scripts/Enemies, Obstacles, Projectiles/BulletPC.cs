@@ -23,7 +23,7 @@ public class BulletPC : BulletBase
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		//detect collision of player's bullet with the map
-		if (col.gameObject.layer == Alias.LAYER_TILEMAP)
+		if (col.gameObject.layer == Alias.LAYER_TILEMAP || col.gameObject.layer == Alias.LAYER_BREAKABLE_SURFACE)
 		{
 			hitMap();
 			destroyMyself();

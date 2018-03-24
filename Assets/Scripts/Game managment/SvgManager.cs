@@ -179,7 +179,7 @@ public class SvgManager : MonoBehaviour
 
 	//DEBUG
 	[UnityEditor.MenuItem("IT Debug Tools/Delete savegame data [!WARNING!]")]
-	static void DeleteSavegameDEBUG()
+	static public void DeleteSavegameDEBUG()
 	{
 		PlayerPrefs.DeleteKey(SavedGameName);
 		print("Deleted " + SavedGameName + " key in PlayerPrefs!!!");

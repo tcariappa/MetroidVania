@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1377167705026552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.783623, y: 6.86722, z: -0.2421875}
+  m_LocalPosition: {x: -48.137505, y: -3.821701, z: 0.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e796ea171b972384abca10e17175b4ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: life 1
+  upgradeName: 
 --- !u!212 &212766374561381492
 SpriteRenderer:
   m_ObjectHideFlags: 1

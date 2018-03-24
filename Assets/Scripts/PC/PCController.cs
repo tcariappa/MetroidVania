@@ -8,8 +8,8 @@ public class PCController : MonoBehaviour
     {
         idle,
         blocked,
-        running, 
-        dashing, 
+        running,
+        dashing,
         regJumping,
         wallJumping,
         falling,
@@ -24,6 +24,8 @@ public class PCController : MonoBehaviour
         unibikeDashing,
         unibikeJumping,
         unibikeFall,
+        unibikeBounceFall,
+        unibikeBounceJump,
         bounceFall,
         bounceJump,
         meleeAttack,
@@ -131,6 +133,7 @@ public class PCController : MonoBehaviour
     //Public properties protected against external writing
     public State currState { get; private set; }
     public int facingDir { get; private set; } //+1 PC moves right, -1 PC moves left, 0 PC idle
+    public Vector2 defaultMove {get; set;} //value that's always added to make sure that it moves in conveyor direction
 
     //Private variables
     int movingDir;
@@ -240,7 +243,7 @@ public class PCController : MonoBehaviour
     private void handleOnPressDash()
     {
         if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.unibikeIdle || currState == State.falling || currState == State.regJumping ||
-            currState == State.bounceJump || currState == State.bounceFall))
+            currState == State.bounceJump || currState == State.bounceFall || currState == State.wallJumping || currState == State.unibikeBounceJump))
             isDashOrdered = true;
         else Debug.Log("Dash is locked");
     }
@@ -314,7 +317,11 @@ public class PCController : MonoBehaviour
 
     public void keycardCollected()
     {
-        if (UpgradesManager.List["keycard3"])
+        if (UpgradesManager.List["keycard4"])
+        {
+            UpgradesManager.DoOnUpgradePicked("keycard5");
+        }
+        else if (UpgradesManager.List["keycard3"])
         {
             UpgradesManager.DoOnUpgradePicked("keycard4");
         }
@@ -368,15 +375,15 @@ public class PCController : MonoBehaviour
             doInSlam();
         }
         //On ground
-        if (currState == State.idle || currState == State.running || 
-            currState == State.blocked || currState == State.unibikeMove || currState == State.shielding || currState == State.unibikeIdle)
+        if (currState == State.idle || currState == State.running || currState == State.blocked 
+            || currState == State.unibikeMove || currState == State.shielding || currState == State.unibikeIdle)
         {
             doInGroundStates();
         }
 
         //In air
-        else if (currState == State.regJumping || currState == State.falling || currState == State.wallJumping || 
-            currState == State.bounceJump || currState == State.unibikeJumping || currState == State.unibikeFall || currState == State.bounceFall)
+        else if (currState == State.regJumping || currState == State.falling || currState == State.wallJumping || currState == State.unibikeBounceFall ||
+            currState == State.bounceJump || currState == State.unibikeJumping || currState == State.unibikeFall || currState == State.bounceFall || currState == State.unibikeBounceJump )
              {
                 doInAirStates();
              }
@@ -414,7 +421,7 @@ public class PCController : MonoBehaviour
             {
                 jumpUnibikeReg();
             }
-            else if (UpgradesManager.List["bounce"] && (currState == State.regJumping || currState == State.falling || 
+            else if (UpgradesManager.List["bounce"] && (currState == State.regJumping || currState == State.falling || currState == State.unibikeBounceJump||
                 currState == State.unibikeJumping || currState == State.unibikeFall || currState == State.bounceJump) && (remainingBounces > 0))
             {
                 isBounceOrdered = true;
@@ -444,7 +451,7 @@ public class PCController : MonoBehaviour
         if (isDashOrdered)
         {
             if (currState == State.idle || currState == State.unibikeIdle || currState == State.running || currState == State.regJumping || 
-                currState == State.bounceJump || currState == State.falling || currState == State.wallJumping)
+                currState == State.bounceJump || currState == State.falling || currState == State.wallJumping || currState == State.unibikeBounceJump)
             {
                 goDash();
             }
@@ -463,7 +470,6 @@ public class PCController : MonoBehaviour
         }
     }
     //END FixedUpdate
-
 
     void doInGroundStates()
     {
@@ -565,6 +571,8 @@ public class PCController : MonoBehaviour
             {
                 if (isBike && !isBounceOrdered)
                     currState = State.unibikeFall;
+                else if (isBike && isBounceOrdered)
+                    currState = State.unibikeBounceFall;
                 else if (isBounceOrdered)
                     currState = State.bounceFall;
                 else currState = State.falling;
@@ -574,7 +582,7 @@ public class PCController : MonoBehaviour
             {
                 doInFall();
             }
-            else if (currState == State.unibikeFall)
+            else if (currState == State.unibikeFall || currState == State.unibikeBounceFall)
             {
                 doInUnibikeFall();
             }
@@ -590,6 +598,10 @@ public class PCController : MonoBehaviour
             {
                 doInWallJump();
             }
+            else if (currState == State.unibikeBounceJump)
+            {
+                doInUnibikeBounceJump();
+            }
             else if (currState == State.bounceJump)
             {
                 doInBounceJump();
@@ -601,7 +613,9 @@ public class PCController : MonoBehaviour
         {
             if (isBounceOrdered)
             {
-                bounceJump();
+                if (isBike)
+                    unibikeBounceJump();
+                else bounceJump();
             }
             else if (inputs.movingDir != Alias.STILL)
             {
@@ -680,7 +694,7 @@ public class PCController : MonoBehaviour
         }
 
         move *= runSpeed;
-        rb.velocity = move;
+        rb.velocity = move + defaultMove;
 
         //TEST
         //Vector3 endPt = rb.position + move;
@@ -700,7 +714,7 @@ public class PCController : MonoBehaviour
         move = new Vector2(inputs.moveInput.x, 0f);
 
         move *= bikeSpeed;
-        rb.velocity = move;
+        rb.velocity = move + defaultMove;
 
     }
 
@@ -803,6 +817,8 @@ public class PCController : MonoBehaviour
         remainingBounces = maxBounces;
 
         currState = State.blocked;
+
+        doInBlockedOrIdle();
     }
 
     void goKnockback()
@@ -824,6 +840,13 @@ public class PCController : MonoBehaviour
         remainingBounces = maxBounces;
 
         currState = State.idle;
+
+        doInBlockedOrIdle();
+    }
+
+    void doInBlockedOrIdle()
+    {
+        rb.velocity = defaultMove;
     }
 
     void goUnibikeIdle()
@@ -836,6 +859,8 @@ public class PCController : MonoBehaviour
         remainingBounces = maxBounces;
 
         currState = State.unibikeIdle;
+
+        doInBlockedOrIdle();
     }
 
     void jumpReg()
@@ -874,6 +899,7 @@ public class PCController : MonoBehaviour
     void doInUnibikeJump()
     {
         moveUnibikeInAir();
+
     }
 
     void doInSlam()
@@ -887,6 +913,7 @@ public class PCController : MonoBehaviour
 
             for (var i=0; i < colls.Length; i++)
             {
+                print("Detected " + colls[i].name);
                 if (colls[i].gameObject.layer == Alias.LAYER_ENEMIES)
                 {
                     enemyRb = colls[i].gameObject.GetComponent<Rigidbody2D>();
@@ -934,7 +961,6 @@ public class PCController : MonoBehaviour
 
     void bounceJump()
     {
-        print("goIdle " + Time.time +" Velocity  " + rb.velocity);
         rb.velocity = new Vector2(rb.velocity.x, 0f); //to have an airJump that looks the same all the time we first reset the current vertical velocity
         Vector2 impulse = new Vector2(0f, bounceImpulse);
         rb.AddForce(impulse, ForceMode2D.Impulse);
@@ -949,6 +975,21 @@ public class PCController : MonoBehaviour
         //applyGravity();
     }
 
+    void unibikeBounceJump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, 0f); //to have an airJump that looks the same all the time we first reset the current vertical velocity
+        Vector2 impulse = new Vector2(0f, bounceImpulse);
+        rb.AddForce(impulse, ForceMode2D.Impulse);
+
+        remainingBounces--;
+
+        isBounceOrdered = false;
+        currState = State.unibikeBounceJump;
+
+        StartCoroutine(coLockJump());
+
+        //applyGravity();
+    }
 
     public void doShieldHit()
     {
@@ -971,7 +1012,11 @@ public class PCController : MonoBehaviour
     {
         moveInAir();
     }
-
+    
+    void doInUnibikeBounceJump()
+    {
+        moveUnibikeInAir();
+    }
 
     void goFalling()
     {
@@ -1047,7 +1092,7 @@ public class PCController : MonoBehaviour
         }
         else if (currState == State.falling || currState == State.bounceFall)
         {
-            maxXSpeedInAir = runSpeed;
+            maxXSpeedInAir = runSpeed + defaultMove.x;
             force.x = inputs.moveInput.x * fallXInputInfluence;
         }
 
@@ -1095,7 +1140,7 @@ public class PCController : MonoBehaviour
         Vector2 force = Vector2.zero;
 
         //During reg jump, inputs always have an influence
-        if (currState == State.unibikeJumping || currState == State.bounceJump)
+        if (currState == State.unibikeJumping || currState == State.unibikeBounceJump)
         {
             force.x = inputs.moveInput.x * unibikeJumpXInputInfluence;
         }
@@ -1105,9 +1150,9 @@ public class PCController : MonoBehaviour
             float comboDir = (inputs.movingDir == jumpDir) ? Alias.STILL : inputs.moveInput.x;
             force.x = comboDir * wallJumpXInputInfluence;
         }
-        else if (currState == State.unibikeFall)
+        else if (currState == State.unibikeFall || currState == State.unibikeBounceFall)
         {
-            maxXSpeedInAir = bikeSpeed;
+            maxXSpeedInAir = bikeSpeed + defaultMove.x;
             force.x = inputs.moveInput.x * fallXInputInfluence;
         }
 
@@ -1325,7 +1370,7 @@ public class PCController : MonoBehaviour
             startPt = facingDir == Alias.RIGHT ? collMngr.sensorBottomRight.transform.position : collMngr.sensorBottomLeft.transform.position;
             startPt.y += 0.4f;
             //We cast a ray downward
-            RaycastHit2D hit = Physics2D.Raycast(startPt, Vector2.down, 0.8f, Alias.LAYERMASK_TILEMAP);
+            RaycastHit2D hit = Physics2D.Raycast(startPt, Vector2.down, 0.8f, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
             //if the ray hits a tile, we use the tile's normal to get the slope
             if (hit)
             {
@@ -1346,10 +1391,10 @@ public class PCController : MonoBehaviour
     Vector2 castLineFromAbove(Vector2 endPt)
     {
         Vector2 startPt = new Vector2(endPt.x, endPt.y + 0.4f);
-        RaycastHit2D hit = Physics2D.Linecast(startPt, endPt, Alias.LAYERMASK_TILEMAP);
+        RaycastHit2D hit = Physics2D.Linecast(startPt, endPt, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
         if (!hit)
         {
-            Debug.LogError("There should be a hit point with the tilemap between " + startPt + " and " + endPt);//DEBUG
+            Debug.LogError("There should be a hit point with the tilemap between " + startPt + " and " + endPt);
             return Vector2.zero;
         }
         return hit.point;

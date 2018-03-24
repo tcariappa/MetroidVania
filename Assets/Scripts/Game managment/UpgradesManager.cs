@@ -10,30 +10,31 @@ public class UpgradesManager : MonoBehaviour
 {
 	static public event System.Action<string> OnUnlocked;
 
-
-	static public Dictionary<string, bool> List = new Dictionary<string, bool>()
-	{
+    //Set this to true or false however you want it to be at the start of game.
+    static public Dictionary<string, bool> List = new Dictionary<string, bool>()
+    {
 		//true if unlocked
 		{ "wall jump", true },
-		{ "bounce", true },
-		{ "fireball 1", false },
-        { "unibike", true },
-        { "dash", true },
-        { "melee", true },
-        { "slam", true },
+        { "bounce", false},
+        { "fireball 1", false },
+        { "unibike", false },
+        { "dash", false },
+        { "melee", false },
+        { "slam", false },
         { "keycard1", false },
         { "keycard2", false },
         { "keycard3", false },
         { "keycard4", false },
+        { "keycard5", false },
         { "bluekeycard", false }
     };
 
 
-	/// <summary>
-	/// Overwrite List with the saved values
-	/// </summary>
-	/// <param name="svgList">The saved upgrade list passed as parameter</param>
-	static public void UpdateFromSavedData(List<SvgSerializableUpgrade> svgList)
+    /// <summary>
+    /// Overwrite List with the saved values
+    /// </summary>
+    /// <param name="svgList">The saved upgrade list passed as parameter</param>
+    static public void UpdateFromSavedData(List<SvgSerializableUpgrade> svgList)
 	{
 		List = new Dictionary<string, bool>();
 
@@ -49,11 +50,29 @@ public class UpgradesManager : MonoBehaviour
 	{
 		if (!List.ContainsKey(upgradeName))
 		{
-			Debug.LogErrorFormat("<color=red>ERROR: upgrade name doesn't correspond to any key in UpgradesManager.List</color>");//DEBUG
+			Debug.LogErrorFormat("<color=red>ERROR: upgrade name doesn't correspond to any key in UpgradesManage.List</color>");//DEBUG
 			return;
 		}
 
 		List[upgradeName] = true;
+
+		if (OnUnlocked != null)
+			OnUnlocked(upgradeName);
+	}
+
+
+	/// <summary>
+	/// 4MENU: DEBUG For use in Debug Menu (you might be able to use it in game though)
+	/// </summary>
+	static public void DoOnUpgradeLost(string upgradeName)
+	{
+		if (!List.ContainsKey(upgradeName))
+		{
+			Debug.LogErrorFormat("<color=red>ERROR: upgrade name doesn't correspond to any key in UpgradesManage.List</color>");//DEBUG
+			return;
+		}
+
+		List[upgradeName] = false;
 
 		if (OnUnlocked != null)
 			OnUnlocked(upgradeName);

@@ -10,8 +10,10 @@ public class SwitchForDoor : MonoBehaviour {
     {
         if(coll.gameObject.layer == Alias.LAYER_PC_SOLID)
         {
+            gameObject.GetComponent<SpriteRenderer>().material.color = Color.cyan ;
             for(int i=0; i<doors.Length; i++)
             Destroy(doors[i]);
         }
     }
+
 }

@@ -44,12 +44,14 @@ public class PCHealthManager : MonoBehaviour
 	void OnEnable()
 	{
 		PCCollTriggerManager.OnHit += handleOnHit;
+        ProximityMine.OnMine += handleOnHit;
 	}
 
 
 	void OnDisable()
 	{
 		PCCollTriggerManager.OnHit -= handleOnHit;
+        ProximityMine.OnMine -= handleOnHit;
 	}
 
 
