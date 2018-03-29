@@ -88,6 +88,9 @@ public class PCController : MonoBehaviour
     [Tooltip("How long the character can hold on to a wall.")]
     private float holdWallDuration = 1f;
     [SerializeField]
+    [Tooltip("The speed at which the character slides down the wall.")]
+    private float wallSlideSpeed = 1f;
+    [SerializeField]
     [Tooltip("The duration of the entire ledge climbing action.")]
     private float climbLedgeDuration = 0.3f;
     [SerializeField]
@@ -893,11 +896,13 @@ public class PCController : MonoBehaviour
 
     void doInRegJump()
     {
+        maxXSpeedInAir = runSpeed + defaultMove.x;
         moveInAir();
     }
 
     void doInUnibikeJump()
     {
+        maxXSpeedInAir = bikeSpeed + defaultMove.x;
         moveUnibikeInAir();
 
     }
@@ -961,6 +966,7 @@ public class PCController : MonoBehaviour
 
     void bounceJump()
     {
+        canCatchWall = UpgradesManager.List["wall jump"];
         rb.velocity = new Vector2(rb.velocity.x, 0f); //to have an airJump that looks the same all the time we first reset the current vertical velocity
         Vector2 impulse = new Vector2(0f, bounceImpulse);
         rb.AddForce(impulse, ForceMode2D.Impulse);
@@ -1223,12 +1229,18 @@ public class PCController : MonoBehaviour
         }
 
         //if clinging time limit reached or input direction is significantly down, the PC falls
-        if (Time.time >= endTime || inputs.moveInput.y < -0.8f)
+        if(inputs.moveInput.y < -0.8f)
+        {
+            canCatchWall = false;
+            goFalling();
+            return;
+        }
+        else if (Time.time >= endTime)
         {
             //won't be able to catch another wall before landing
             canCatchWall = false;
-
-            goFalling();
+            rb.velocity = new Vector2(0, -wallSlideSpeed);
+            //goFalling();
             return;
         }
     }

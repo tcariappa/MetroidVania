@@ -65,5 +65,5 @@ public class ProximityMine : MonoBehaviour {
                 OnMine(damage);
                 farewell();
             }
-    }  
+    }
 }

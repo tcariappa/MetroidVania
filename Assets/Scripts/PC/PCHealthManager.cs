@@ -45,6 +45,7 @@ public class PCHealthManager : MonoBehaviour
 	{
 		PCCollTriggerManager.OnHit += handleOnHit;
         ProximityMine.OnMine += handleOnHit;
+        ElectricLine.OnElectric += handleOnHit;
 	}
 
 
@@ -52,7 +53,8 @@ public class PCHealthManager : MonoBehaviour
 	{
 		PCCollTriggerManager.OnHit -= handleOnHit;
         ProximityMine.OnMine -= handleOnHit;
-	}
+        ElectricLine.OnElectric -= handleOnHit;
+    }
 
 
 	void handleOnHit(float dmg)
@@ -79,7 +81,9 @@ public class PCHealthManager : MonoBehaviour
 
 			//We unregister from the event OnHit so that we don't send the event OnDeath more than once
 			PCCollTriggerManager.OnHit -= handleOnHit;
-		}
+            ProximityMine.OnMine -= handleOnHit;
+            ElectricLine.OnElectric -= handleOnHit;
+        }
 	}
 
 

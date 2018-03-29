@@ -15,12 +15,12 @@ public class UpgradesManager : MonoBehaviour
     {
 		//true if unlocked
 		{ "wall jump", true },
-        { "bounce", false},
+        { "bounce", true},
         { "fireball 1", false },
-        { "unibike", false },
-        { "dash", false },
-        { "melee", false },
-        { "slam", false },
+        { "unibike", true },
+        { "dash", true },
+        { "melee", true },
+        { "slam", true },
         { "keycard1", false },
         { "keycard2", false },
         { "keycard3", false },

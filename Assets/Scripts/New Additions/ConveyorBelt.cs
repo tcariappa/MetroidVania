@@ -10,6 +10,9 @@ public class ConveyorBelt : MonoBehaviour {
     private bool isRight = false;
     private int direction = 1;
     private Vector2 addMove;
+    [SerializeField]
+    private LayerMask layers;
+
     private void Awake()
     {
         direction = isRight ? 1 : -1;
@@ -29,7 +32,7 @@ public class ConveyorBelt : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D coll)
     {
-        if (coll.gameObject.layer != (Alias.LAYER_PC_TRIGGER | Alias.LAYER_PC_SOLID))
+        if (coll.gameObject.layer != layers)
         { 
             coll.attachedRigidbody.velocity = addMove;
         }
