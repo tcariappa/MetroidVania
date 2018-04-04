@@ -16,9 +16,6 @@ public class PCAnimManager : MonoBehaviour
             case PCController.State.idle:
                 animator.SetInteger("state", 0);
                 break;
-            case PCController.State.unibikeIdle:
-                animator.SetInteger("state", 0);
-                break;
             case PCController.State.blocked:
 				animator.SetInteger("state", 1);
 				break;
@@ -54,6 +51,9 @@ public class PCAnimManager : MonoBehaviour
                 break;
 
             //Unibike State Animations
+            case PCController.State.unibikeIdle:
+                animator.SetInteger("state", 0);
+                break;
             case PCController.State.unibikeMove:
                 animator.SetInteger("state", 4);
                 break;

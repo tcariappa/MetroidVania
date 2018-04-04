@@ -246,11 +246,7 @@ public class PCController : MonoBehaviour
     private void handleOnPressDash()
     {
         if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.unibikeIdle || currState == State.falling || currState == State.regJumping ||
-<<<<<<< HEAD
-            currState == State.bounceJump || currState == State.bounceFall || currState == State.wallJumping))
-=======
             currState == State.bounceJump || currState == State.bounceFall || currState == State.wallJumping || currState == State.unibikeBounceJump))
->>>>>>> master
             isDashOrdered = true;
         else Debug.Log("Dash is locked");
     }
@@ -917,7 +913,6 @@ public class PCController : MonoBehaviour
         if(!collMngr.isInAir)
         {
             goIdle();
-            //Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, 1 << LayerMask.NameToLayer("Enemies"));
             Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, slamLayers);
 
             for (var i=0; i < colls.Length; i++)
@@ -952,6 +947,7 @@ public class PCController : MonoBehaviour
         }
         Vector2 impulse = new Vector2(wallJumpVector.x * facingDir, wallJumpVector.y);
         rb.AddForce(impulse, ForceMode2D.Impulse);
+        canCatchWall = UpgradesManager.List["wall jump"];
 
         currState = State.wallJumping;
 

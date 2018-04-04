@@ -14,7 +14,10 @@ public class ProximityMine : MonoBehaviour {
     private bool isTimed = false;
     [SerializeField]
     private float explodeTimer = 2;
+    [SerializeField]
+    private bool turnsOff;
 
+    bool isInCollider;
     CircleCollider2D areaColl;
 
     public static event System.Action<float> OnMine;
@@ -31,6 +34,7 @@ public class ProximityMine : MonoBehaviour {
     {
         if(coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
         {
+            isInCollider = true;
             StartCoroutine("coMineExplodeTimer");
         }
     }
@@ -38,7 +42,11 @@ public class ProximityMine : MonoBehaviour {
     {
         if (coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
         {
-            StopCoroutine("coMineExplodeTimer");
+            isInCollider = false;
+            if (turnsOff)
+            {
+                StopCoroutine("coMineExplodeTimer");
+            }
         }
     }
 
@@ -49,6 +57,8 @@ public class ProximityMine : MonoBehaviour {
             Instantiate(explosionVfxRef, transform.position, Quaternion.identity);
 
         //destroy this whole gameobject (including the particle system component)
+        //Destroy(gameObject);
+        //print("gameObject Destroyed");
         Destroy(transform.parent.gameObject);
     }
 
@@ -60,10 +70,10 @@ public class ProximityMine : MonoBehaviour {
                 yield return null;
             } while (Time.time < endTime);
 
-            if (OnMine != null)
+            if (OnMine != null && isInCollider)
             {
                 OnMine(damage);
-                farewell();
             }
+                farewell();
     }
 }

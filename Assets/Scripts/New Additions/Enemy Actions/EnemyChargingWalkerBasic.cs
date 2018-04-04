@@ -34,9 +34,12 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
     private Transform currentTarget;
     private int chargeDir;
     bool isCharging;
+    int movingDir;
 
     float endTime;
+    [SerializeField]
     float knockBackForce = 5f;
+    [SerializeField]
     float knockbackDuration = 0.2f;
     Vector2 knockBackVector;
 
@@ -75,7 +78,9 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
         if (enemyInfo.currState == EnemyInfo.States.engaged)
             goCharge();
 
-        chargeDir = ((currentTarget.position.x - transform.position.x) > 0) ? 1 : -1;
+        if (enemyInfo.currState == EnemyInfo.States.knockback)
+            Knockback();
+
     }
 
     void flip()
@@ -89,6 +94,7 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
     {
         frontSensor = facingDir == Alias.LEFT ? leftSensor : rightSensor;
         bottomFrontSensor = facingDir == Alias.LEFT ? bottomLeftSensor : bottomRightSensor;
+        chargeDir = ((currentTarget.position.x - transform.position.x) > 0) ? 1 : -1;
 
         Collider2D rangeColl = Physics2D.OverlapCircle(transform.position, chargeRadius, 1 << Alias.LAYER_PC_TRIGGER);
         Collider2D frontCollHit = Physics2D.OverlapPoint(frontSensor.position, Alias.LAYERMASK_TILEMAP);
@@ -116,11 +122,17 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
         frontSensor = facingDir == Alias.LEFT ? leftSensor : rightSensor;
         bottomFrontSensor = facingDir == Alias.LEFT ? bottomLeftSensor : bottomRightSensor;
 
+        spritey.flipX = chargeDir == 1 ? true : false;
+
         Collider2D rangeColl = Physics2D.OverlapCircle(transform.position, chargeRadius, 1 << Alias.LAYER_PC_TRIGGER);
         Collider2D frontCollHit = Physics2D.OverlapPoint(frontSensor.position, Alias.LAYERMASK_TILEMAP);
         Collider2D bottomCollHit = Physics2D.OverlapPoint(bottomFrontSensor.position, Alias.LAYERMASK_TILEMAP);
         if(rangeColl == null)
         {
+            if (facingDir != chargeDir)
+            {
+                spritey.flipX = !spritey.flipX;
+            }
             StartCoroutine(stopCharge());
         }
         else if (frontCollHit != null)
@@ -146,6 +158,7 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
         isCharging = false;
         rb.velocity = Vector2.zero;
         enemyInfo.currState = EnemyInfo.States.patrolling;
+
         checkPc = false;
 
         float endTime = Time.time + chargeCooldown;
@@ -155,6 +168,7 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
         } while (Time.time < endTime);
 
         checkPc = true;
+
     }
 
     void Knockback()
@@ -165,7 +179,7 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
     IEnumerator coKnockback()
     {
         float delta = pc.transform.position.x - rb.transform.position.x;
-        knockBackVector = new Vector2(knockBackForce * 20 * Mathf.Sign(-delta), 0);
+        knockBackVector = new Vector2(knockBackForce * Mathf.Sign(-delta), 0);
         rb.AddForce(knockBackVector, ForceMode2D.Impulse);
         yield return new WaitForSeconds(knockbackDuration);
         enemyInfo.currState = EnemyInfo.States.patrolling;

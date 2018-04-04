@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ConveyorBelt : MonoBehaviour {
 
-<<<<<<< HEAD
-=======
     [SerializeField]
     private float conveyorBeltSpeed = 5.0f;
     [SerializeField]
@@ -51,5 +49,4 @@ public class ConveyorBelt : MonoBehaviour {
         //    coll.attachedRigidbody.velocity = Vector2.zero;
         //}
     }
->>>>>>> master
 }

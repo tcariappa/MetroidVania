@@ -18,18 +18,12 @@ public static class Alias {
 	public const int LAYER_ENEMY_PROJECTILES = 14;
 	public const int LAYER_PC_TRIGGER = 15;
     public const int LAYER_BREAKABLE_SURFACE = 16;
-<<<<<<< HEAD
-=======
     public const int LAYER_MOVING_PF = 25;
->>>>>>> master
 
     //USEFUL LAYER MASKS (for collision)
     public const int LAYERMASK_TILEMAP = 1 << LAYER_TILEMAP;
     public const int LAYERMASK_BREAKABLE_SURFACE = 1 << LAYER_BREAKABLE_SURFACE;
-<<<<<<< HEAD
-=======
     public const int LAYERMASK_CONVEYOR_BELT = 1 << LAYER_PC_SOLID | 1 << LAYER_PC_TRIGGER | 1 << LAYER_DEFAULT;
->>>>>>> master
 
     //public const float SOFT_SLOPE = 26.5651f; //tan(a) = opposite side length / adjacent side length --> tan(a) = 1 tile / 2 tiles --> a = arctan(1/2)
     //public const float HARD_SLOPE = 45f;

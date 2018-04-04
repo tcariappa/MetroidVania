@@ -11,12 +11,13 @@ public class EnemyCollManager : MonoBehaviour
 	bool isMapDamaging;
 
 
-	//Called by BulletPC when it hits that enemy
-	public void onHitByAttack(float dmg)
+    //Called by BulletPC when it hits that enemy
+    public void onHitByAttack(float dmg)
 	{
 		Debug.Log(name + " screams: PC attacked me!");//TEST
 		healthManager.gotHitByPCAttack(dmg);
-	}
+        info.currState = EnemyInfo.States.knockback; //Just knockback in case enemy is dynamic.
+    }
 
 
 	//Called by PC when it touches that enemy

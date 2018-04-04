@@ -8,11 +8,14 @@ public class SwitchForDoor : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
         if(coll.gameObject.layer == Alias.LAYER_PC_SOLID)
         {
             gameObject.GetComponent<SpriteRenderer>().material.color = Color.cyan ;
-            for(int i=0; i<doors.Length; i++)
-            Destroy(doors[i]);
+            for (int i = 0; i < doors.Length; i++)
+            {
+                doors[i].GetComponent<SwitchOperatedDoors>().openDoor();
+            }
         }
     }
 

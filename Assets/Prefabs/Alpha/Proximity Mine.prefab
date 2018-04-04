@@ -150,6 +150,7 @@ MonoBehaviour:
     type: 2}
   isTimed: 1
   explodeTimer: 2
+  turnsOff: 1
 --- !u!212 &212556522740012748
 SpriteRenderer:
   m_ObjectHideFlags: 1
