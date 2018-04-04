@@ -176,7 +176,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -26.3, y: 27.5, z: 0}
+=======
+  m_LocalPosition: {x: 0.28055, y: 2.5228384, z: 0}
+>>>>>>> master
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 431498}
@@ -332,16 +336,16 @@ MonoBehaviour:
   - {fileID: 114000010778376162}
   runSpeed: 7
   bikeSpeed: 11
-  regJumpXInputInfluence: 3.5
-  unibikeJumpXInputInfluence: 7.5
+  regJumpXInputInfluence: 40
+  unibikeJumpXInputInfluence: 60
   wallJumpXInputInfluence: 10
   fallXInputInfluence: 5
   regJumpImpulse: 16.2
   bounceImpulse: 22.5
-  wallJumpImpulse: 13
+  wallJumpImpulse: 12.5
   wallJumpAngle: 60
   wallJumpLockDuration: 0.12
-  holdWallDuration: 1.2
+  holdWallDuration: 0.5
   climbLedgeDuration: 0.3
   maxBounces: 5
   dashTime: 0.12

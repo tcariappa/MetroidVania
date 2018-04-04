@@ -20,6 +20,8 @@ public class PCInputsManager : MonoBehaviour
     public static event System.Action OnPressSlam;
     public static event System.Action OnPressShield;
     public static event System.Action OnReleaseShield;
+    public static event System.Action OnPressInteract;
+    public static event System.Action OnReleaseInteract;
 
 
     // Use this for initialization
@@ -158,6 +160,17 @@ public class PCInputsManager : MonoBehaviour
             pc.isShieldButtonPressed = false;
             if (OnReleaseShield != null)
                 OnReleaseShield();
+        }
+
+        if(Input.GetAxisRaw("Interact") > 0)
+        {
+            if (OnPressInteract != null)
+                OnPressInteract();
+        }
+        if (Input.GetAxisRaw("Interact") == 0)
+        {
+            if (OnReleaseInteract != null)
+                OnReleaseInteract();
         }
     }
 

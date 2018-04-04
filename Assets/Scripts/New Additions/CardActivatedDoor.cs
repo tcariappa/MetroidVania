@@ -14,7 +14,7 @@ public class CardActivatedDoor : MonoBehaviour {
     [Tooltip("Can the door be unlocked by security level cards.")]
     private bool keycardDoor = false;
 
-    private void Awake()
+    private void OnValidate()
     {
         if((blueCardDoor && !keycardDoor) || (!blueCardDoor && !keycardDoor))
         {
@@ -24,29 +24,40 @@ public class CardActivatedDoor : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
+<<<<<<< HEAD
         if (doorSecurityLevel == 5 && UpgradesManager.List["keycard5"])
         {
             gameObject.SetActive(false);
         }
         else if (doorSecurityLevel == 4 && UpgradesManager.List["keycard4"])
+=======
+        if (coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
+>>>>>>> master
         {
-            gameObject.SetActive(false);
-        }
-        else if (doorSecurityLevel == 3 && UpgradesManager.List["keycard3"])
-        {
-            gameObject.SetActive(false);
-        }
-        else if (doorSecurityLevel == 2 && UpgradesManager.List["keycard2"])
-        {
-            gameObject.SetActive(false);
-        }
-        else if (doorSecurityLevel == 1 && UpgradesManager.List["keycard1"])
-        {
-            gameObject.SetActive(false);
-        }
-        else if (blueCardDoor && UpgradesManager.List["bluekeycard"])
-        {
-            gameObject.SetActive(false);
+            if (doorSecurityLevel == 5 && UpgradesManager.List["keycard5"])
+            {
+                gameObject.SetActive(false);
+            }
+            else if (doorSecurityLevel == 4 && UpgradesManager.List["keycard4"])
+            {
+                gameObject.SetActive(false);
+            }
+            else if (doorSecurityLevel == 3 && UpgradesManager.List["keycard3"])
+            {
+                gameObject.SetActive(false);
+            }
+            else if (doorSecurityLevel == 2 && UpgradesManager.List["keycard2"])
+            {
+                gameObject.SetActive(false);
+            }
+            else if (doorSecurityLevel == 1 && UpgradesManager.List["keycard1"])
+            {
+                gameObject.SetActive(false);
+            }
+            else if (blueCardDoor && UpgradesManager.List["bluekeycard"])
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

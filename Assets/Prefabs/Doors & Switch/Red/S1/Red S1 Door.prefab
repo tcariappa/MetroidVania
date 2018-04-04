@@ -37,8 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1123612005129928}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.452, y: 14.021, z: 0.06640625}
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.6332445, y: 4.6617556, z: -0.0390625}
+>>>>>>> master
   m_LocalScale: {x: 1.2403803, y: 0.9896507, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -132,7 +137,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorSecurityLevel: 1
   blueCardDoor: 0
+<<<<<<< HEAD
   keycardDoor: 0
+=======
+  keycardDoor: 1
+>>>>>>> master
 --- !u!212 &212185986874444236
 SpriteRenderer:
   m_ObjectHideFlags: 1

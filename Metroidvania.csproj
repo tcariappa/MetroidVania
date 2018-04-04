@@ -285,6 +285,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Dev\DebugMenu.cs" />
     <Compile Include="Assets\_from SHMUP\EnemyAim.cs" />
     <Compile Include="Assets\_from SHMUP\EnemyMiscPointsHolder.cs" />
     <Compile Include="Assets\_from SHMUP\EnemyMoveStraight.cs" />
@@ -326,13 +327,17 @@
     <Compile Include="Assets\Scripts\Game managment\UpgradesManager.cs" />
     <Compile Include="Assets\Scripts\GUI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\GUI\UnibikeMeter.cs" />
+    <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\New Additions\CardActivatedDoor.cs" />
     <Compile Include="Assets\Scripts\New Additions\ConveyorBelt.cs" />
     <Compile Include="Assets\Scripts\New Additions\Enemy Actions\EnemyFly.cs" />
     <Compile Include="Assets\Scripts\New Additions\Enemy Actions\EnemyFlyWithPhysics.cs" />
     <Compile Include="Assets\Scripts\New Additions\Enemy Actions\EnemyWalkerBasic.cs" />
+    <Compile Include="Assets\Scripts\New Additions\Enemy Actions\ProximityMine.cs" />
     <Compile Include="Assets\Scripts\New Additions\HoldSwitchForDoor.cs" />
     <Compile Include="Assets\Scripts\New Additions\MeleeAttack.cs" />
+    <Compile Include="Assets\Scripts\New Additions\MultiDoor.cs" />
+    <Compile Include="Assets\Scripts\New Additions\MultiDoorSwitch.cs" />
     <Compile Include="Assets\Scripts\New Additions\ShieldBlock.cs" />
     <Compile Include="Assets\Scripts\New Additions\SwitchForDoor.cs" />
     <Compile Include="Assets\Scripts\New Additions\UnibikeHealthManager.cs" />

@@ -132,7 +132,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorSecurityLevel: 2
   blueCardDoor: 0
+<<<<<<< HEAD
   keycardDoor: 0
+=======
+  keycardDoor: 1
+>>>>>>> master
 --- !u!212 &212061748657691156
 SpriteRenderer:
   m_ObjectHideFlags: 1
