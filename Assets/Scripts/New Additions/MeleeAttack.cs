@@ -9,9 +9,15 @@ public class MeleeAttack : MonoBehaviour {
     [HideInInspector]
     public bool collOn;
     float attackTimer = 2f;
-    public float attackCool;
-    public float damage = 10;
+
     public PCController pc;
+    public Rigidbody2D rb;
+    [SerializeField]
+    private float attackCool;
+    [SerializeField]
+    private float damage = 10;
+    [SerializeField]
+    private float meleeForwardForce;
     
     private void Awake()
     {
@@ -40,8 +46,7 @@ public class MeleeAttack : MonoBehaviour {
 
             if (attackTimer > 0)
             {
-                attackTimer -= Time.deltaTime;
-           
+                attackTimer -= Time.deltaTime;          
             }
             else
             {
@@ -58,7 +63,8 @@ public class MeleeAttack : MonoBehaviour {
             attackColliderBox.enabled = true;
             spritey.enabled = true;
             collOn = true;
-            attackTimer = attackCool;           
+            attackTimer = attackCool;
+            rb.AddForce(new Vector2(meleeForwardForce * 10 * pc.facingDir, 0));
         }
     }
 

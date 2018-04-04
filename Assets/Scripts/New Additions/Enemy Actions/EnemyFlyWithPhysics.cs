@@ -33,22 +33,22 @@ public class EnemyFlyWithPhysics : MonoBehaviour {
 
     private void Update()
     {
-        /*float dist = ((Vector2)tgt.position - rb.position).magnitude;
+        float dist = ((Vector2)tgt.position - rb.position).magnitude;
         if(dist < 0.5f)
         {
             doWhenHitObject();
-        } */ 
+        }
         //Do it with OnTriggerEnter2D and make the waypoints on TransparetnFX layer.
     }
 
-    private void OnTriggerEnter2D(Collider2D coll)
+    /*private void OnTriggerEnter2D(Collider2D coll)
     {
         int layTransparentFX = 1;
         if(coll.gameObject.layer == layTransparentFX)
         {
             doWhenHitObject();
         }
-    }
+    }*/
 
     void doWhenHitObject()
     {

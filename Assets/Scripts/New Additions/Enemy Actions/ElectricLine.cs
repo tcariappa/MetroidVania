@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ElectricLine : MonoBehaviour
+{
+    public static event System.Action<float> OnElectric;
+    [SerializeField]
+    private float damage = 300.0f;
+
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (OnElectric != null)
+            OnElectric(damage);
+    }
+}
+	
+	

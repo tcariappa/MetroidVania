@@ -21,7 +21,7 @@ public class PCSensor : MonoBehaviour
 
 	void checkCollision()
 	{
-		Collider2D c = Physics2D.OverlapPoint(transform.position);
+		Collider2D c = Physics2D.OverlapPoint(transform.position, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
 
 		if (c != null)
 		{

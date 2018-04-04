@@ -8,8 +8,8 @@ public class PCController : MonoBehaviour
     {
         idle,
         blocked,
-        running,
-        dashing,
+        running, 
+        dashing, 
         regJumping,
         wallJumping,
         falling,
@@ -19,6 +19,7 @@ public class PCController : MonoBehaviour
         climbingLedge,
         dying,
         exiting,
+        unibikeIdle,
         unibikeMove,
         unibikeDashing,
         unibikeJumping,
@@ -117,6 +118,9 @@ public class PCController : MonoBehaviour
     [SerializeField]
     [Tooltip("Damage caused by player slam ability")]
     private float slamDamage = 10.0f;
+    [SerializeField]
+    [Tooltip("The layer that the slam will effect.")]
+    private LayerMask slamLayers;
     [SerializeField]
     [Tooltip("The max number of hits shield can take.")]
     private int shieldMaxHits = 5;
@@ -235,8 +239,8 @@ public class PCController : MonoBehaviour
 
     private void handleOnPressDash()
     {
-        if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.falling || currState == State.regJumping ||
-            currState == State.bounceJump || currState == State.bounceFall))
+        if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.unibikeIdle || currState == State.falling || currState == State.regJumping ||
+            currState == State.bounceJump || currState == State.bounceFall || currState == State.wallJumping))
             isDashOrdered = true;
         else Debug.Log("Dash is locked");
     }
@@ -308,6 +312,30 @@ public class PCController : MonoBehaviour
         }
     }
 
+    public void keycardCollected()
+    {
+        if (UpgradesManager.List["keycard4"])
+        {
+            UpgradesManager.DoOnUpgradePicked("keycard5");
+        }
+        else if (UpgradesManager.List["keycard3"])
+        {
+            UpgradesManager.DoOnUpgradePicked("keycard4");
+        }
+        else if (UpgradesManager.List["keycard2"])
+        {
+            UpgradesManager.DoOnUpgradePicked("keycard3");
+        }
+        else if (UpgradesManager.List["keycard1"])
+        {
+            UpgradesManager.DoOnUpgradePicked("keycard2");
+        }
+        else if (!UpgradesManager.List["keycard1"])
+        {
+            UpgradesManager.DoOnUpgradePicked("keycard1");
+        }
+    }
+
     // FixedUpdate is called once per physics tick
     void FixedUpdate()
     {
@@ -344,8 +372,8 @@ public class PCController : MonoBehaviour
             doInSlam();
         }
         //On ground
-        if (currState == State.idle || currState == State.running || 
-            currState == State.blocked || currState == State.unibikeMove || currState == State.shielding)
+        if (currState == State.idle || currState == State.running || currState == State.blocked 
+            || currState == State.unibikeMove || currState == State.shielding || currState == State.unibikeIdle)
         {
             doInGroundStates();
         }
@@ -378,7 +406,7 @@ public class PCController : MonoBehaviour
         //Processing Jump. WARNING, only HERE we can process Jump in PCController!
         if (isJumpOrdered)
         {
-            if (currState == State.idle || currState == State.running || currState == State.blocked)
+            if (currState == State.idle || currState == State.unibikeIdle || currState == State.running || currState == State.blocked)
             {
                 jumpReg();
             }
@@ -419,7 +447,7 @@ public class PCController : MonoBehaviour
 
         if (isDashOrdered)
         {
-            if (currState == State.idle || currState == State.running || currState == State.regJumping || 
+            if (currState == State.idle || currState == State.unibikeIdle || currState == State.running || currState == State.regJumping || 
                 currState == State.bounceJump || currState == State.falling || currState == State.wallJumping)
             {
                 goDash();
@@ -487,10 +515,42 @@ public class PCController : MonoBehaviour
             //if on bike
             else
             {
-                if (currState == State.unibikeMove)
-                    moveOnBike();
+                if (inputs.movingDir == Alias.RIGHT)
+                {
+                    if (!collMngr.isTouchingRightTile)
+                    {
+                        if (currState == State.unibikeMove)
+                            moveOnBike();
+                        else
+                            goMoveOnBike();
+                    }
+                    else
+                    {
+                        goBlocked();
+                    }
+                    //making sure PC faces right
+                    faceRight();
+                }
+                else if (inputs.movingDir == Alias.LEFT)
+                {
+                    if (!collMngr.isTouchingLeftTile)
+                    {
+                        if (currState == State.unibikeMove)
+                            moveOnBike();
+                        else
+                            goMoveOnBike();
+                    }
+                    else
+                    {
+                        goBlocked();
+                    }
+                    //making sure PC faces left
+                    faceLeft();
+                }
                 else
-                    goMoveOnBike();
+                {
+                    goUnibikeIdle();
+                }
             }
         }
         else
@@ -554,7 +614,9 @@ public class PCController : MonoBehaviour
             }
             else
             {
-                goIdle();
+                if (!isBike)
+                    goIdle();
+                else goUnibikeIdle();
             }
         }
     }
@@ -630,6 +692,21 @@ public class PCController : MonoBehaviour
         //lineRendererTEST.SetPosition(1, endPt);
     }
 
+    void moveOnBike()
+    {
+        movingDir = inputs.movingDir;
+
+        //if there's no input we don't move the PC
+        if (movingDir == Alias.STILL) return;
+
+        Vector2 move;
+
+        move = new Vector2(inputs.moveInput.x, 0f);
+
+        move *= bikeSpeed;
+        rb.velocity = move;
+
+    }
 
     void goMoveOnBike()
     {
@@ -696,31 +773,6 @@ public class PCController : MonoBehaviour
         }
     }
 
-    void moveOnBike()
-    {
-        movingDir = inputs.movingDir;
-
-        //if there's no input we don't move the PC
-        if (movingDir == Alias.STILL) return;
-
-        Vector2 move;
-
-        move = new Vector2(inputs.moveInput.x, 0f);
-
-        if (inputs.movingDir == Alias.LEFT)
-        {
-            faceLeft();
-        }
-        else if (inputs.movingDir == Alias.RIGHT)
-        {
-            faceRight();
-        }
-        else goIdle();
-
-        move *= bikeSpeed;
-        rb.velocity = move;
-
-    }
 
     void doDash()
     {
@@ -778,6 +830,17 @@ public class PCController : MonoBehaviour
         currState = State.idle;
     }
 
+    void goUnibikeIdle()
+    {
+        applyGravity();
+        rb.velocity = Vector2.zero;
+        movingDir = Alias.STILL;
+
+        canCatchWall = UpgradesManager.List["wall jump"];
+        remainingBounces = maxBounces;
+
+        currState = State.unibikeIdle;
+    }
 
     void jumpReg()
     {
@@ -823,15 +886,21 @@ public class PCController : MonoBehaviour
         if(!collMngr.isInAir)
         {
             goIdle();
-            Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, 1 << LayerMask.NameToLayer("Enemies"));
+            //Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, 1 << LayerMask.NameToLayer("Enemies"));
+            Collider2D[] colls = Physics2D.OverlapCircleAll(centre, slamArea, slamLayers);
 
-            for(var i=0; i < colls.Length; i++)
+            for (var i=0; i < colls.Length; i++)
             {
-                enemyRb = colls[i].gameObject.GetComponent<Rigidbody2D>();
-                float delta = rb.position.x - enemyRb.position.x;
-                enemyKnockback = new Vector2(knockForce * Mathf.Sign(-delta), knockForce);
-                enemyRb.AddForce(enemyKnockback, ForceMode2D.Impulse);
-                colls[i].gameObject.GetComponent<EnemyCollManager>().onHitByAttack(slamDamage);
+                print("Detected " + colls[i].name);
+                if (colls[i].gameObject.layer == Alias.LAYER_ENEMIES)
+                {
+                    enemyRb = colls[i].gameObject.GetComponent<Rigidbody2D>();
+                    float delta = rb.position.x - enemyRb.position.x;
+                    enemyKnockback = new Vector2(knockForce * Mathf.Sign(-delta), knockForce);
+                    enemyRb.AddForce(enemyKnockback, ForceMode2D.Impulse);
+                    colls[i].gameObject.GetComponent<EnemyCollManager>().onHitByAttack(slamDamage);
+                }
+                else Destroy(colls[i].gameObject);
             }
         }
     }
@@ -1261,7 +1330,7 @@ public class PCController : MonoBehaviour
             startPt = facingDir == Alias.RIGHT ? collMngr.sensorBottomRight.transform.position : collMngr.sensorBottomLeft.transform.position;
             startPt.y += 0.4f;
             //We cast a ray downward
-            RaycastHit2D hit = Physics2D.Raycast(startPt, Vector2.down, 0.8f, Alias.LAYERMASK_TILEMAP);
+            RaycastHit2D hit = Physics2D.Raycast(startPt, Vector2.down, 0.8f, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
             //if the ray hits a tile, we use the tile's normal to get the slope
             if (hit)
             {
@@ -1282,10 +1351,10 @@ public class PCController : MonoBehaviour
     Vector2 castLineFromAbove(Vector2 endPt)
     {
         Vector2 startPt = new Vector2(endPt.x, endPt.y + 0.4f);
-        RaycastHit2D hit = Physics2D.Linecast(startPt, endPt, Alias.LAYERMASK_TILEMAP);
+        RaycastHit2D hit = Physics2D.Linecast(startPt, endPt, Alias.LAYERMASK_TILEMAP | Alias.LAYERMASK_BREAKABLE_SURFACE);
         if (!hit)
         {
-            Debug.LogError("There should be a hit point with the tilemap between " + startPt + " and " + endPt);//DEBUG
+            Debug.LogError("There should be a hit point with the tilemap between " + startPt + " and " + endPt);
             return Vector2.zero;
         }
         return hit.point;

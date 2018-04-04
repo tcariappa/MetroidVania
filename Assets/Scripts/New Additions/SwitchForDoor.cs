@@ -15,4 +15,5 @@ public class SwitchForDoor : MonoBehaviour {
             Destroy(doors[i]);
         }
     }
+
 }
