@@ -10,12 +10,14 @@ public class MiscInputsManager : MonoBehaviour
 	//definition of a simple event that is called OnPressQuit; this one is just a message
 	static public System.Action OnPressQuit;
 	static public System.Action OnPressPause;
+	static public System.Action OnPressAction;//4DIALOGS
+    static public System.Action OnReleaseAction;
 
-
-	void Update()
+    void Update()
 	{
 		updateQuitInput();
 		updatePauseInput();
+		updateActionInput();//4DIALOGS
 
 		updateDEBUG();//DEBUG
 	}
@@ -23,7 +25,7 @@ public class MiscInputsManager : MonoBehaviour
 
 	void updateQuitInput()
 	{
-		if (Input.GetButtonDown("Cancel") || Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetButtonDown("Back") || Input.GetKeyDown(KeyCode.Escape))
 		{
 			//Sending OnPressQuit event (It's just a messqge)
 			if (OnPressQuit != null)
@@ -35,7 +37,7 @@ public class MiscInputsManager : MonoBehaviour
 	void updatePauseInput()
 	{
 		//If the user presses Pause virtual button or P key...
-		if (/* Input.GetButtonDown("Pause") || */ Input.GetKeyDown(KeyCode.P))
+		if (Input.GetButtonDown("Pause") || Input.GetKeyDown(KeyCode.P))
 		{
 			//...we send OnPressPause event
 			if (OnPressPause != null)
@@ -43,10 +45,28 @@ public class MiscInputsManager : MonoBehaviour
 		}
 	}
 
-		/// <summary>
-		/// DEBUG TEST
-		/// </summary>
-		void updateDEBUG()
+
+	//4DIALOGS
+	void updateActionInput()
+	{
+		if (Input.GetButtonDown("Interact"))
+		{
+			if (OnPressAction != null)
+				OnPressAction();         
+		}
+
+        if(Input.GetButtonUp("Interact"))
+        {
+            if (OnReleaseAction != null)
+                OnReleaseAction();
+        }
+	}
+
+
+	/// <summary>
+	/// DEBUG TEST
+	/// </summary>
+	void updateDEBUG()
 	{
 		if (Input.GetKeyDown(KeyCode.T))
 		{

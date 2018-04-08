@@ -7,7 +7,7 @@ public class EnemyAim : TriggerableObject
 	EnemyShoot shootManager; //to update shootManager.shootingAngle
 	[SerializeField]
 	float maxDelta = 60f; //max target angle from the initialAngle
-	Transform target;
+	[SerializeField] Transform target;
 
 	float initialAngle;
 	float ccwAngleMax, cwAngleMax;

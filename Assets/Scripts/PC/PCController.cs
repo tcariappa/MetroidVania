@@ -36,7 +36,6 @@ public class PCController : MonoBehaviour
 
     static public PCController Me;
     MeleeAttack melee;
-    UnibikeHealthManager uniHealth;
 
     //Unity user-editable variables
     [SerializeField]
@@ -195,7 +194,6 @@ public class PCController : MonoBehaviour
 
         shieldColl = GameObject.Find("ShieldCollider").GetComponent<EdgeCollider2D>();
         shieldSprite = GameObject.Find("ShieldCollider").GetComponent<SpriteRenderer>();
-        uniHealth = gameObject.GetComponent<UnibikeHealthManager>();
     }
 
 
@@ -948,6 +946,7 @@ public class PCController : MonoBehaviour
         Vector2 impulse = new Vector2(wallJumpVector.x * facingDir, wallJumpVector.y);
         rb.AddForce(impulse, ForceMode2D.Impulse);
         canCatchWall = UpgradesManager.List["wall jump"];
+        hasJustDashed = false;
 
         currState = State.wallJumping;
 

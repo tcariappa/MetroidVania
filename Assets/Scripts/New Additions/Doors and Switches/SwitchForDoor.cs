@@ -8,8 +8,7 @@ public class SwitchForDoor : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
-        gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        if(coll.gameObject.layer == Alias.LAYER_PC_SOLID)
+        if(coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
         {
             gameObject.GetComponent<SpriteRenderer>().material.color = Color.cyan ;
             for (int i = 0; i < doors.Length; i++)
@@ -17,6 +16,7 @@ public class SwitchForDoor : MonoBehaviour {
                 doors[i].GetComponent<SwitchOperatedDoors>().openDoor();
             }
         }
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 
 }

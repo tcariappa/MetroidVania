@@ -34,9 +34,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220948567168916}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.69, y: -0.04, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.176, y: -14.08995, z: 0}
+  m_LocalScale: {x: 0.47325477, y: 0.4260129, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -53,7 +53,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1781292, y: 0.51986504}
+  m_Offset: {x: 0.1491785, y: 0.51986504}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -64,7 +64,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1437416, y: 3.03973}
+  m_Size: {x: 1.201643, y: 3.03973}
   m_EdgeRadius: 0
 --- !u!114 &114020709793225616
 MonoBehaviour:
@@ -80,6 +80,6 @@ MonoBehaviour:
   isCheckpoint: 0
   isExit: 1
   iD: 0
-  exitToScene: Climb_Level
+  exitToScene: Construction A-2
   entryPointID: 13
   mustPCFaceLeft: 0

@@ -37,6 +37,11 @@ public class MainMenu : MonoBehaviour
 		}
 	}
 
+	public void DoOnClickLevelSelectBtn(int levelIndex)
+	{
+		SceneManager.LoadScene (levelIndex);
+	}
+
 
 	public void ExitApp()
 	{

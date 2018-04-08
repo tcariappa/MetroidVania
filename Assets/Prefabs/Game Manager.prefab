@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 114000014051353218}
   - component: {fileID: 114000011217923658}
   - component: {fileID: 114000013147978418}
+  - component: {fileID: 114387287083074748}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -90,3 +91,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fda69ade655b1b4e8f52860b94bf787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114387287083074748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f2ae831c45e74ab15d094ccca1cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogs:
+  - upgradeName: chiptohimself
+    lines:
+    - text: "Huh, where am I!? \nAm I dreaming? "
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: '*cough* *cough*
+
+        Its dusty in here'
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: "Wherever this is, I need to get out of here. \nFast."
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+  - upgradeName: meetalec
+    lines:
+    - text: AHHHHHH!!
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: 'Wait, you''re not a robot.
+
+        Or are you?
+
+'
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: Have I finally lost my mind?
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: '*touches Chip*'
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: 'AHH! You are real! And not a robot?
+
+        Whh- I''m not going insane?
+
+'
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: "No no, this is not good. \nKiddo, this is no place for you to be.\n\n"
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: 'It''s too late, sit here with me and hope for it to get better. They
+        can''t get us here. '
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: 'There''s no escape for us, they have taken over. It''s too dangerous
+        for you to go.  '
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+  - upgradeName: backatthejunction
+    lines:
+    - text: 'Kiddo
+
+        You made it back. Forgive me for doubting you.'
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: As you can see, I've dug myself a hole I can't climb out of. You made
+        me realise kiddo
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: 'That, where there is a  will, there is a way. We both need to get out
+        of here, but for that I need your help. '
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: 'At the heart of this factory, the one that controls the robots here.
+        She needs to be stopped, only then can we escape.  from this place. '
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+    - text: Your courage has moved me, kiddo. I don't know what got you into this
+        mess, but I know that with your help, we can make it out of here.
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+  - upgradeName: dialog
+    lines:
+    - text: Hello nigga wassup
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0
+  - upgradeName: dialog
+    lines:
+    - text: Hello nigga wassup
+      duration: 0
+      portrait: {fileID: 0}
+      isPortraitLeft: 0

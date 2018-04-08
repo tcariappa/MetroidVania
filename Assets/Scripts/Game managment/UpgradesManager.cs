@@ -26,7 +26,8 @@ public class UpgradesManager : MonoBehaviour
         { "keycard3", false },
         { "keycard4", false },
         { "keycard5", false },
-        { "bluekeycard", false }
+        { "bluekeycard", false },
+        { "chiptohimself" , false }, { "meetalec" , false }, { "backatthejunction" , false }
     };
 
 

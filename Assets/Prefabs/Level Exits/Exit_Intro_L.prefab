@@ -34,8 +34,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1756303745771166}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.23, y: 14.02, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -31.99266, y: 7.4830465, z: 0.3046875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,6 +80,6 @@ MonoBehaviour:
   isCheckpoint: 0
   isExit: 1
   iD: 0
-  exitToScene: Intro_Level
+  exitToScene: Junction
   entryPointID: 7
   mustPCFaceLeft: 0

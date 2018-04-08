@@ -34,8 +34,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1752011794644362}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.67, y: -4.97, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.107712, y: -4.3820477, z: 0.01171875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,6 +80,6 @@ MonoBehaviour:
   isCheckpoint: 0
   isExit: 1
   iD: 0
-  exitToScene: PowerSlam_level
+  exitToScene: Canteen
   entryPointID: 17
   mustPCFaceLeft: 0

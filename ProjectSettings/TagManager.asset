@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Dialog Text Field
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,6 @@ TagManager:
   - Enemy Projectiles
   - PC Trigger
   - Breakable Surface
-  - Convayer Belt
   - 
   - 
   - 
@@ -45,9 +45,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: 1
+  - name: Layer 1
     uniqueID: 886323205
     locked: 0
-  - name: 2
+  - name: Layer 2
     uniqueID: 4181028057
+    locked: 0
+  - name: Layer 3
+    uniqueID: 3441156591
+    locked: 0
+  - name: Layer 4
+    uniqueID: 2994057997
+    locked: 0
+  - name: Layer 5
+    uniqueID: 3200915855
+    locked: 0
+  - name: Layer 6
+    uniqueID: 1886464951
+    locked: 0
+  - name: Foreground
+    uniqueID: 634743633
     locked: 0

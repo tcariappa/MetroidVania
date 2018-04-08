@@ -80,6 +80,6 @@ MonoBehaviour:
   isCheckpoint: 0
   isExit: 1
   iD: 0
-  exitToScene: KP_Level
+  exitToScene: Storage Room
   entryPointID: 25
   mustPCFaceLeft: 0

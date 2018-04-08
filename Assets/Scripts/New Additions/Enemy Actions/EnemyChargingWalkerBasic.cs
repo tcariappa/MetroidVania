@@ -15,8 +15,6 @@ public class EnemyChargingWalkerBasic : MonoBehaviour {
     [SerializeField]
     private float chargeSpeed = 9.0f;
     [SerializeField]
-    private float chargeDuration = 1.0f;
-    [SerializeField]
     private float chargeCooldown = 1.0f;
 
     GameObject pc;

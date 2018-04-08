@@ -10,8 +10,13 @@ public class ElectricLine : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
-        if (OnElectric != null)
-            OnElectric(damage);
+        if (coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
+        {
+            if (OnElectric != null)
+                OnElectric(damage);
+        }
+        else if(coll.gameObject.layer != (Alias.LAYER_PC_TRIGGER | Alias.LAYER_PC_SOLID))
+            Destroy(coll.gameObject);
     }
 }
 	
