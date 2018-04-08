@@ -616,7 +616,11 @@ public class PCController : MonoBehaviour
             {
                 if (isBike)
                     unibikeBounceJump();
-                else bounceJump();
+                else
+                {
+                    goIdle();
+                    print("Cannot bounce on foot. Activate unibike to bounce jump.");
+                }
             }
             else if (inputs.movingDir != Alias.STILL)
             {

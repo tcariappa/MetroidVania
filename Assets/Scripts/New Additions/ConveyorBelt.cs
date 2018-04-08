@@ -18,6 +18,7 @@ public class ConveyorBelt : MonoBehaviour {
         direction = isRight ? 1 : -1;
         addMove = new Vector2(conveyorBeltSpeed * direction, 0f);
     }
+
     private void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
@@ -32,6 +33,10 @@ public class ConveyorBelt : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D coll)
     {
+        if (coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
+        {
+            coll.gameObject.GetComponentInParent<PCController>().defaultMove = addMove;
+        }
         if (coll.gameObject.layer != layers)
         { 
             coll.attachedRigidbody.velocity = addMove;
