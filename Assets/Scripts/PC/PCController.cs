@@ -200,6 +200,7 @@ public class PCController : MonoBehaviour
     void OnEnable()
     {
         PCInputsManager.OnPressJump += handleOnPressJump;
+        PCInputsManager.OnReleaseJump += handleOnReleaseJump;
         PCInputsManager.OnPressUnibike += handleOnPressUnibike;
         PCInputsManager.OnPressDash += handleOnPressDash;
         PCInputsManager.OnPressSlam += handleOnPressSlam;
@@ -213,6 +214,7 @@ public class PCController : MonoBehaviour
     void OnDisable()
     {
         PCInputsManager.OnPressJump -= handleOnPressJump;
+        PCInputsManager.OnReleaseJump -= handleOnReleaseJump;
         PCInputsManager.OnPressUnibike -= handleOnPressUnibike;
         PCInputsManager.OnPressDash -= handleOnPressDash;
         PCInputsManager.OnPressShield -= handleOnPressShield;
@@ -241,6 +243,12 @@ public class PCController : MonoBehaviour
         isJumpOrdered = true;
     }
 
+    private void handleOnReleaseJump()
+    {
+        if (isBounceOrdered)
+            isBounceOrdered = false;
+    }
+
     private void handleOnPressDash()
     {
         if (UpgradesManager.List["dash"] && !hasJustDashed && (currState == State.running || currState == State.idle || currState == State.unibikeIdle || currState == State.falling || currState == State.regJumping ||
@@ -259,7 +267,10 @@ public class PCController : MonoBehaviour
     private void handleOnPressUnibike()
     {
         if (UpgradesManager.List["unibike"])
+        {
             isBike = !isBike;
+            isBounceOrdered = false;
+        }
         else Debug.Log("Unibike is locked");
     }
 

@@ -8,7 +8,7 @@ public class CamEnemyShoot : MonoBehaviour {
 
     private void Start()
     {
-        Shooter = GetComponent<EnemyShoot>();
+        Shooter = GetComponentInParent<EnemyShoot>();
     }
 
     private void OnTriggerEnter2D(Collider2D coll)
@@ -22,6 +22,7 @@ public class CamEnemyShoot : MonoBehaviour {
     {
         if (coll.gameObject.layer == Alias.LAYER_PC_TRIGGER)
         {
+            Shooter.StopAllCoroutines();
             Shooter.enabled = false;
         }
     }

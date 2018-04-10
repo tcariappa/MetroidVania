@@ -13,7 +13,8 @@ public class PCInputsManager : MonoBehaviour
     PCController pc;
 	//Events
 	public static event System.Action OnPressJump;
-	public static event System.Action OnPressMelee;
+    public static event System.Action OnReleaseJump;
+    public static event System.Action OnPressMelee;
 	public static event System.Action OnReleaseFire1;
 	public static event System.Action OnPressDash;
     public static event System.Action OnPressUnibike;
@@ -118,6 +119,11 @@ public class PCInputsManager : MonoBehaviour
 			if (OnPressJump != null)
 				OnPressJump();
 		}
+        if(Input.GetButtonUp("Jump"))
+        {
+            if (OnReleaseJump != null)
+                OnReleaseJump();
+        }
 		//Not reset here coz PCController checks the inputs on FixedUpdate(), which might execute twice per frame or once every other frame...
 	}
 
